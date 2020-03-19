@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+/* .intro {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background: url(https://www.pexels.com/es-es/foto/mar-oceano-oscuro-textura-3560136/) no-repeat;
+    display: table;
+    top: 0;
+    background-size: cover;
+} */
+.img-fluid {
+    max-width: 50%;
+    min-width: 200px;
+    height: auto;
+}
