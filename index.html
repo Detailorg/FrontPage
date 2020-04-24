@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+
         <title>dTeilorg FrontPage</title>
         
         <meta charset="utf-8">
@@ -8,95 +9,169 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0">    
         
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="./src/style.css">
         <link rel="icon" href="./src/assets/favicon.ico">
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src="app.js" href="./src/app.js"></script>
 
-        <div class="jumbotron jumbotron-fluid">
+        <!-- Logo  Superior -->
+        <div class="jumbotron bg-white jumbotron-fluid">
             <div class="container">
-                <img alt="dTeilorg logo" src="./src/assets/logo.png" class="img-fluid mx-auto d-block">
+                <img alt="dTeilorg logo" src="./src/assets/Logo_ConEslogan.png" class="img-fluid mx-auto d-block">
             </div>
         </div>
 
-        <!-- Para dentro del menu desplegable
-        <div class="list-group">
-            <a href="#" class="list-group-item list-group-item-action">Action item</a>
-            <a href="#" class="list-group-item list-group-item-action list-group-item-success">Success item</a>
-            <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Secondary item</a>
-            <a href="#" class="list-group-item list-group-item-action list-group-item-info">Info item</a>
-            <a href="#" class="list-group-item list-group-item-action list-group-item-warning">Warning item</a>
-            <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Danger item</a>
-            <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Primary item</a>
-            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Dark item</a>
-            <a href="#" class="list-group-item list-group-item-action list-group-item-light">Light item</a>
-        </div> 
-        <div class="list-group">
+        <!-- Menu -->
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
             <div class="dropdown">
-            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                Dropdown button
-            </button>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Link 1</a>
-                <a class="dropdown-item" href="#">Link 2</a>
-
-                <div class="dropdown-divider"></div>
-
-                <a class="dropdown-item" href="#">Link 3</a>
+                <button class="dropbtn">Dropdown
+                <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+                </div>
             </div>
-            </div>
-        </div>-->
+            <a href="#about">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="menuFunction()">&#9776;</a>
+        </div>
 
     </head>
 
     <!-- BODY -->
     <body>
+
+        <!-- Alerta de JavaScript no activado -->
         <noscript>
-            <strong>We're sorry but dTeilorg FrontPage doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+            <strong>We're sorry but dTeil.org FrontPage doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
         </noscript>
         
-        <!-- <section class="intro">
-            <div class="inner">
-                <div class="container-fluid p-3 border">
-                    <button type="button" class="btn btn-outline-secondary  mx-auto d-block">
-                        <h2 href="a">
-                            Leave the <abbr title="The internet that we know today => The computer of other">Cloud</abbr> ...
-                        </h2>
-                    </button>
-                </div>
-            </div>
-            
-            <div class="inner">
-                <div class="container-fluid p-3 border">
-                    <button type="button" class="btn btn-outline-secondary  mx-auto d-block">
-                        <h2 href="a">
-                            Leave the <abbr title="The internet that we know today => The computer of other">Cloud</abbr> ...
-                        </h2>
-                    </button>
-                </div>
-            </div>
-
-            <div class="inner">
-                <div class="container-fluid p-3 border">
-                    <button type="button" class="btn btn-outline-secondary  mx-auto d-block">
-                        <h2 href="a">
-                            Leave the <abbr title="The internet that we know today => The computer of other">Cloud</abbr> ...
-                        </h2>
-                    </button>
-                </div>
-            </div>
-        </section>
-
-        <p>Parrafo de texto largo</p> -->
     </body>
 
-    <!-- FOOTER -->
-    <footer>
+<!-- Footer -->
+    <footer class="page-footer font-small mdb-color lighten-3 pt-4">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+    
+        <div class="row">
+    
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+    
+            <!-- Content -->
+            <h5 class="font-weight-bold text-uppercase mb-4">Footer Content</h5>
+            <p>Here you can use rows and columns to organize your footer content.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit amet numquam iure provident voluptate
+                esse
+                quasi, veritatis totam voluptas nostrum.</p>
+    
+            </div>
+
+            <!-- Grid column -->
+            <hr class="clearfix w-100 d-md-none">
+
+            <!-- Links -->
+            <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+                <h5 class="font-weight-bold text-uppercase mb-4">About</h5>
+        
+                <ul class="list-unstyled">
+                    <li>
+                    <p>
+                        <a href="#!">PROJECTS</a>
+                    </p>
+                    </li>
+                    <li>
+                    <p>
+                        <a href="#!">ABOUT US</a>
+                    </p>
+                    </li>
+                    <li>
+                    <p>
+                        <a href="#!">BLOG</a>
+                    </p>
+                    </li>
+                    <li>
+                    <p>
+                        <a href="#!">AWARDS</a>
+                    </p>
+                    </li>
+                </ul>
+    
+            </div>
+
+            <!-- Grid column -->
+            <hr class="clearfix w-100 d-md-none">
+            <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+    
+            <!-- Contact details -->
+            <h5 class="font-weight-bold text-uppercase mb-4">Address</h5>
+            <ul class="list-unstyled">
+                <li>
+                <p>
+                    <i class="fas fa-home mr-3"></i> Seville, Spain</p>
+                </li>
+                <li>
+                <p>
+                    <i class="fas fa-envelope mr-3"></i> hi@dteil.org</p>
+                </li>
+                <li>
+                <p>
+                    <i class="fas fa-phone mr-3"></i> + 34 606 55 72 53</p>
+                </li>
+            </ul>
+            </div>
+
+            <!-- Grid column -->
+            <hr class="clearfix w-100 d-md-none">
+            <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+    
+            <!-- Social buttons -->
+            <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
+    
+            <!-- Facebook -->
+            <a type="button" class="btn-floating btn-fb">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <!-- Twitter -->
+            <a type="button" class="btn-floating btn-tw">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <!-- Google +-->
+            <a type="button" class="btn-floating btn-gplus">
+                <i class="fab fa-google-plus-g"></i>
+            </a>
+            <!-- Dribbble -->
+            <a type="button" class="btn-floating btn-dribbble">
+                <i class="fab fa-dribbble"></i>
+            </a>
+    
+            </div>
+        </div>
+        </div>
+        <!-- Footer Links -->
+    
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="https://dteil.org/"> dTeil.org</a>
+        </div>
+        <!-- Copyright -->
+
+        <!-- Botón de cookies -->
         <div class="alert alert-dark alert-dismissible fade show">
             <button type="button" class="close" data-dismiss="alert">&times;</button>
             <strong>Cookies: </strong> We don't use any cookie, because we don't want to track you for your back.
         </div>
+        <!-- Botón de cookies -->
+
     </footer>
+    <!-- Footer -->
+
 </html>
