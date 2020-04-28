@@ -1,102 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+    <!-- HEAD -->
     <head>
-        <title>dTeilorg FrontPage</title>
         
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">    
         
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="./src/style.css">
         <link rel="icon" href="./src/assets/favicon.ico">
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src="app.js" href="./src/app.js"></script>
 
-        <div class="jumbotron jumbotron-fluid">
+        <title>dTeilorg FrontPage</title>
+
+        <!-- Logo  Superior -->
+        <div class="jumbotron bg-white jumbotron-fluid">
             <div class="container">
-                <img alt="dTeilorg logo" src="./src/assets/logo.png" class="img-fluid mx-auto d-block">
+                <img alt="dTeilorg logo" src="./src/assets/Logo_ConEslogan.png" class="img-fluid mx-auto d-block">
             </div>
         </div>
-
-        <!-- Para dentro del menu desplegable
-        <div class="list-group">
-            <a href="#" class="list-group-item list-group-item-action">Action item</a>
-            <a href="#" class="list-group-item list-group-item-action list-group-item-success">Success item</a>
-            <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Secondary item</a>
-            <a href="#" class="list-group-item list-group-item-action list-group-item-info">Info item</a>
-            <a href="#" class="list-group-item list-group-item-action list-group-item-warning">Warning item</a>
-            <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Danger item</a>
-            <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Primary item</a>
-            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Dark item</a>
-            <a href="#" class="list-group-item list-group-item-action list-group-item-light">Light item</a>
-        </div> 
-        <div class="list-group">
-            <div class="dropdown">
-            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                Dropdown button
-            </button>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Link 1</a>
-                <a class="dropdown-item" href="#">Link 2</a>
-
-                <div class="dropdown-divider"></div>
-
-                <a class="dropdown-item" href="#">Link 3</a>
-            </div>
-            </div>
-        </div>-->
-
+        <!-- Logo  Superior -->
+        
     </head>
+    <!-- HEAD -->
 
     <!-- BODY -->
     <body>
+
+        <!-- Alerta de JavaScript no activado -->
         <noscript>
-            <strong>We're sorry but dTeilorg FrontPage doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+            <strong>We're sorry but dTeil.org FrontPage doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
         </noscript>
+
+        <!-- Acordeon de pestañas desplegables y colapsables -->
+        <div id="accordion">
+
+            <div class="card">
+                <div class="card-header" id="HeaderZero">
+                  <a class="collapsed card-link" data-toggle="collapse" href="#collapseZero">
+                      <h1 class="accordionHeader">0<span id="cardinal">th</span> step: <strong> be smart</h1>
+                  </a>
+                </div>
+                <div id="collapseZero" class="collapse" data-parent="#accordion">
+                  <div class="card-body">
+                    Lorem ipsum..
+                  </div>
+                </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header" id="HeaderOne">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseOne">
+                    <h1 class="accordionHeader">1<span id="cardinal">st</span> step: <strong>be unbreakable</h1>
+                </a>
+              </div>
+              <div id="collapseOne" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                  Lorem ipsum..
+                </div>
+              </div>
+            </div>
+          
+            <div class="card">
+              <div class="card-header" id="HeaderTwo">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                <h1 class="accordionHeader">2nd step: be compatible</h1>
+                </a>
+              </div>
+              <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                  Lorem ipsum..
+                </div>
+              </div>
+            </div>
+          
+            <div class="card">
+              <div class="card-header" id="HeaderThree">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                    <h1 class="accordionHeader">3rd step: be valuable</h1>
+                </a>
+              </div>
+              <div id="collapseThree" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                  Lorem ipsum..
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="HeaderFour">
+                  <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
+                      <h1 class="accordionHeader">4th step: be digital</h1>
+                  </a>
+                </div>
+                <div id="collapseFour" class="collapse" data-parent="#accordion">
+                  <div class="card-body">
+                    Lorem ipsum..
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="HeaderFive">
+                  <a class="collapsed card-link" data-toggle="collapse" href="#collapseFive">
+                      <h1 class="accordionHeaderFive">5th step: be helped</h1>
+                  </a>
+                </div>
+                <div id="collapseFive" class="collapse" data-parent="#accordion">
+                  <div class="card-body">
+                    Lorem ipsum..
+                  </div>
+                </div>
+              </div>
+          
+          </div>
+        <!-- Acordeon de pestañas desplegables y colapsables -->
         
-        <!-- <section class="intro">
-            <div class="inner">
-                <div class="container-fluid p-3 border">
-                    <button type="button" class="btn btn-outline-secondary  mx-auto d-block">
-                        <h2 href="a">
-                            Leave the <abbr title="The internet that we know today => The computer of other">Cloud</abbr> ...
-                        </h2>
-                    </button>
-                </div>
-            </div>
-            
-            <div class="inner">
-                <div class="container-fluid p-3 border">
-                    <button type="button" class="btn btn-outline-secondary  mx-auto d-block">
-                        <h2 href="a">
-                            Leave the <abbr title="The internet that we know today => The computer of other">Cloud</abbr> ...
-                        </h2>
-                    </button>
-                </div>
-            </div>
-
-            <div class="inner">
-                <div class="container-fluid p-3 border">
-                    <button type="button" class="btn btn-outline-secondary  mx-auto d-block">
-                        <h2 href="a">
-                            Leave the <abbr title="The internet that we know today => The computer of other">Cloud</abbr> ...
-                        </h2>
-                    </button>
-                </div>
-            </div>
-        </section>
-
-        <p>Parrafo de texto largo</p> -->
     </body>
+    <!-- BODY -->
 
-    <!-- FOOTER -->
-    <footer>
+<!-- Footer -->
+    <footer class="page-footer font-small mdb-color lighten-3 pt-4">
+    
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="https://dteil.org/"> dTeil.org</a>
+        </div>
+        <!-- Copyright -->
+
+        <!-- Botón de cookies -->
         <div class="alert alert-dark alert-dismissible fade show">
             <button type="button" class="close" data-dismiss="alert">&times;</button>
             <strong>Cookies: </strong> We don't use any cookie, because we don't want to track you for your back.
         </div>
+        <!-- Botón de cookies -->
+
     </footer>
+    <!-- Footer -->
+
 </html>
