@@ -1,146 +1,408 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <!-- HEAD -->
-    <head>
-        
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">    
-        
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="./src/style.css">
-        <link rel="icon" href="./src/assets/favicon.ico">
-        
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-        <script src="app.js" href="./src/app.js"></script>
 
-        <title>dTeilorg FrontPage</title>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!-- Logo  Superior -->
-        <div class="jumbotron bg-white jumbotron-fluid">
-            <div class="container">
-                <img alt="dTeilorg logo" src="./src/assets/Logo_ConEslogan.png" class="img-fluid mx-auto d-block">
-            </div>
+  <!-- Material Design for Bootstrap fonts and icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+  <!-- Material Design for Bootstrap CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <title>dTeiL.org</title>
+  <link rel="icon" href="src/assets/favicon.ico">
+  <link rel="stylesheet" href="src/styles.css">
+</head>
+
+<body data-spy="scroll" data-target="#nbvr" data-offset="0">
+  <!--Navbar-->
+  <nav id="nbvr" class="navbar navbar-expand-lg navbar-light fixed-top">
+    <a class="navbar-brand" href="#Home"> <img src="src/assets/logo.png" alt="logo" width="100"> </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span type="button" class="btn btn-primary bmd-btn-icon"><i class="material-icons">more_vert</i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link backgroundandradius" href="#Steps">Steps</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link backgroundandradius" href="#Contact">Contact</a>
+        </li>
+        <li>
+          <a class="nav-link backgroundandradius" href="#People">People</a>
+        </li>
+      </ul>
+      <span class="backgroundandradius float-right">
+        <small><i>Suitable digital assets</i></small>
+      </span>
+    </div>
+  </nav>
+  <!--##########################################################################################-->
+
+<!--Cookies Consent-->
+<div class="row">
+  <div class="col-sm-12 button-fixed Cookies">
+    <div class="p-3 bg-custom text-white  alert alert-warning alert-dismissible fade show">
+      <div class="row">
+        <div class="col-10">
+          <h5 class="medium">Cookies Policy</h5>
         </div>
-        <!-- Logo  Superior -->
-        
-    </head>
-    <!-- HEAD -->
+        <div class="col-2 text-center">
+          <i class="fas fa-times"></i>
+        </div>
+      </div>
+      <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. (Lorem ipsum generator)
+      </small>
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+  </div>
+</div>
+<!--##########################################################################################-->
 
-    <!-- BODY -->
-    <body>
+<!--Image fades out-->
+  <div class="full first centerall">
+    <img src="src/assets/logo.png" width="100%" alt="logo">
+  </div>
+  <!--##########################################################################################-->
 
-        <!-- Alerta de JavaScript no activado -->
-        <noscript>
-            <strong>We're sorry but dTeil.org FrontPage doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-        </noscript>
-
-        <!-- Acordeon de pestañas desplegables y colapsables -->
-        <div id="accordion">
-
-            <div class="card">
-                <div class="card-header" id="HeaderZero">
-                  <a class="collapsed card-link" data-toggle="collapse" href="#collapseZero">
-                      <h1 class="accordionHeader">0<span id="cardinal">th</span> step: <strong> be smart</h1>
-                  </a>
-                </div>
-                <div id="collapseZero" class="collapse" data-parent="#accordion">
-                  <div class="card-body">
-                    Lorem ipsum..
-                  </div>
-                </div>
+  <!--First slide (Home)-->
+  <main class="full" id="Home">
+    <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+          <div class="full Home">
+            <div class="octogon animation">
+              <img src="src/assets/Icon.png" class="animation" width="50%" alt="logo">
+              <h4 class="anim-octogon">Hacia un mundo digital descentralizado...</h4>
             </div>
-
-            <div class="card">
-              <div class="card-header" id="HeaderOne">
-                <a class="collapsed card-link" data-toggle="collapse" href="#collapseOne">
-                    <h1 class="accordionHeader">1<span id="cardinal">st</span> step: <strong>be unbreakable</h1>
-                </a>
-              </div>
-              <div id="collapseOne" class="collapse" data-parent="#accordion">
-                <div class="card-body">
-                  Lorem ipsum..
-                </div>
-              </div>
-            </div>
-          
-            <div class="card">
-              <div class="card-header" id="HeaderTwo">
-                <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-                <h1 class="accordionHeader">2nd step: be compatible</h1>
-                </a>
-              </div>
-              <div id="collapseTwo" class="collapse" data-parent="#accordion">
-                <div class="card-body">
-                  Lorem ipsum..
-                </div>
-              </div>
-            </div>
-          
-            <div class="card">
-              <div class="card-header" id="HeaderThree">
-                <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
-                    <h1 class="accordionHeader">3rd step: be valuable</h1>
-                </a>
-              </div>
-              <div id="collapseThree" class="collapse" data-parent="#accordion">
-                <div class="card-body">
-                  Lorem ipsum..
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header" id="HeaderFour">
-                  <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
-                      <h1 class="accordionHeader">4th step: be digital</h1>
-                  </a>
-                </div>
-                <div id="collapseFour" class="collapse" data-parent="#accordion">
-                  <div class="card-body">
-                    Lorem ipsum..
-                  </div>
-                </div>
-              </div>
-
-              <div class="card">
-                <div class="card-header" id="HeaderFive">
-                  <a class="collapsed card-link" data-toggle="collapse" href="#collapseFive">
-                      <h1 class="accordionHeaderFive">5th step: be helped</h1>
-                  </a>
-                </div>
-                <div id="collapseFive" class="collapse" data-parent="#accordion">
-                  <div class="card-body">
-                    Lorem ipsum..
-                  </div>
-                </div>
-              </div>
-          
           </div>
-        <!-- Acordeon de pestañas desplegables y colapsables -->
-        
-    </body>
-    <!-- BODY -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+            <li data-target="#carousel" data-slide-to="3"></li>
+          </ol>
+          <!--/.Indicators-->
+          <!--Slides-->
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <div class="view">
+                <img class="d-block" src="src/assets/Fractal1.jpg" alt="First slide">
+              </div>
+              <div class="carousel-caption">
+                <h5 class="h5-responsive text-dark backgroundandradius">Redes blockchain y sidechains</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <!--Mask color-->
+              <div class="view">
+                <img class="d-block" src="src/assets/Fractal2.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-caption">
+                <h5 class="h5-responsive text-dark backgroundandradius">Diseño de tokens y DApps sobre Smart Contracts</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <!--Mask color-->
+              <div class="view">
+                <img class="d-block" src="src/assets/Fractal3.png" alt="Third slide">
+              </div>
+              <div class="carousel-caption">
+                <h5 class="h5-responsive text-dark backgroundandradius">Trazabilidad en cadenas de suministros y servicios financieros</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <!--Mask color-->
+              <div class="view">
+                <img class="d-block" src="src/assets/Document.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-caption">
+                <h5 class="h5-responsive text-dark backgroundandradius">Somos puente entre ambos mundos</h5>
+              </div>
+            </div>
+          </div>
+          <!--/.Slides-->
+          <!--Controls-->
+          <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+          <!--/.Controls-->
+        </div>
+        <!--/.Carousel Wrapper-->
+      </div>
+    </main>
+  <!--##########################################################################################-->
+  <!-- Pyramid (coming soon...)
+  <div class="full">
+    <div class="pyramid">
+      <div class="pyramid-1">
 
-<!-- Footer -->
-    <footer class="page-footer font-small mdb-color lighten-3 pt-4">
+      </div>
+      <div class="pyramid-2">
+
+      </div>
+      <div class="pyramid-3">
+
+      </div>
+      <div class="pyramid-4">
+
+      </div>
+      <div class="pyramid-5">
+
+      </div>
+      <div class="pyramid-6">
+
+      </div>
+      <div class="pyramid-7">
+
+      </div>
+      <div class="pyramid-8">
+
+      </div>
+    </div>
+  </div>
+
+
+##########################################################################################-->
+
+  <!--Second slide(Steps)-->
+
+  <div class="full centerall" id="Steps">
+    <!--Accordion wrapper-->
+    <div class="accordion md-accordion accordion-1 container py-5 my-5" id="accordion" role="tablist">
+      <div class="card" data-aos="fade-right">
+        <div class="card-header" role="tab" id="heading1">
+          <h5 class="text-uppercase mb-0 py-1">
+            <a class="white-text font-weight-bold hide" data-toggle="collapse" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+              Step 1: Inmutabilización <img class="hidden-item float-right" src="src/assets/networking.png" width="32.5em" alt="arrow-down">
+            </a>
+          </h5>
+        </div>
+        <div id="collapse1" class="collapse" role="tabpanel" aria-labelledby="heading1" data-parent="#accordion">
+          <div class="card-body">
+            <div class="row my-4">
+              <div class="col-md-8">
+                <h2 class="font-weight-bold mb-3 black-text">Primero</h2>
+                <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco laborisLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua.</p>
+                <p class="mb-0">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                  fugiat nulla pariatur.</p>
+              </div>
+              <div class="col-md-4 mt-3 pt-2">
+                <div class="view z-depth-1">
+                  <img src="src/assets/test.jpg" alt="" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card" data-aos="fade-left">
+        <div class="card-header blue lighten-3 z-depth-1" role="tab" id="heading2">
+          <h5 class="text-uppercase mb-0 py-1">
+            <a class="collapsed font-weight-bold white-text hide" data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+              Step 2: Privacidad <img class="hidden-item cloud float-right" src="src/assets/steps.png" width="32.5em" alt="arrow-down">
+            </a>
+          </h5>
+        </div>
+        <div id="collapse2" class="collapse" role="tabpanel" aria-labelledby="heading2" data-parent="#accordion">
+          <div class="card-body">
+            <div class="row my-4">
+              <div class="col-md-8">
+                <h2 class="font-weight-bold mb-3 black-text">Segundo</h2>
+                <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco laboris</p>
+                <p class="mb-0">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                  fugiat nulla pariatur.</p>
+              </div>
+              <div class="col-md-4 mt-3 pt-2">
+                <div class="view z-depth-1">
+                  <img src="src/assets/test.jpg" alt="" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card" data-aos="fade-right">
+        <div class="card-header blue lighten-3 z-depth-1" role="tab" id="heading3">
+          <h5 class="text-uppercase mb-0 py-1">
+            <a class="collapsed font-weight-bold white-text hide" data-toggle="collapse" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+              Step 2: Tokenización <img class="hidden-item float-right img-fluid" src="src/assets/computer.png" width="32.5em" alt="arrow-down">
+            </a>
+          </h5>
+        </div>
+        <div id="collapse3" class="collapse" role="tabpanel" aria-labelledby="heading3" data-parent="#accordion">
+          <div class="card-body">
+            <div class="row my-4">
+              <div class="col-md-8">
+                <h2 class="font-weight-bold mb-3 black-text">Tercero</h2>
+                <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco laboris</p>
+                <p class="mb-0">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                  fugiat nulla pariatur.</p>
+              </div>
+              <div class="col-md-4 mt-3 pt-2">
+                <div class="view z-depth-1">
+                  <img src="src/assets/test.jpg" alt="" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card" data-aos="fade-left">
+        <div class="card-header blue lighten-3 z-depth-1" role="tab" id="heading4">
+          <h5 class="text-uppercase mb-0 py-1">
+            <a class="collapsed font-weight-bold white-text hide" data-toggle="collapse" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
+              Step 4: Inteligencia <img class="hidden-item cloud float-right" src="src/assets/nodes.png" width="32.5em" alt="arrow-down">
+            </a>
+          </h5>
+        </div>
+        <div id="collapse4" class="collapse" role="tabpanel" aria-labelledby="heading4" data-parent="#accordion">
+          <div class="card-body">
+            <div class="row my-4">
+              <div class="col-md-8">
+                <h2 class="font-weight-bold mb-3 black-text">Cuarto</h2>
+                <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco laboris</p>
+                <p class="mb-0">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                  fugiat nulla pariatur.</p>
+              </div>
+              <div class="col-md-4 mt-3 pt-2">
+                <div class="view z-depth-1">
+                  <img src="src/assets/test.jpg" alt="" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Accordion wrapper-->
+    </div>
+  
+    </div>
     
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2020 Copyright:
-        <a href="https://dteil.org/"> dTeil.org</a>
-        </div>
-        <!-- Copyright -->
+  <!--##########################################################################################-->
 
-        <!-- Botón de cookies -->
-        <div class="alert alert-dark alert-dismissible fade show">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <strong>Cookies: </strong> We don't use any cookie, because we don't want to track you for your back.
+  <!--Third slide(Contact)-->
+  <div class="full centerall" id="Contact">
+    <div class="container pt-5">
+      <div class="row justify-content-center mb-3">
+        <div class="mx-auto" data-aos="fade-up">
+          <h1>Be Helped</h1>
         </div>
-        <!-- Botón de cookies -->
+      </div>
+      <form id="contact-form" method="post" action="mailto:hi@dteilorg.org" role="form" enctype="text/plain">
+        <div class="messages"></div>
+        <div class="controls">
+          <div class="row justify-content-center">
+            <div class="col-sm-4" data-aos="fade-down-right">
+              <div class="form-group">
+                <label for="form_name" class="bmd-label-floating col-sm-6">Name</label>
+                <input id="form_name" type="text" name="Name" class="form-control form-control-lg" required="required" data-error="Name is required!">
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="form-group" data-aos="fade-down-left">
+                <label for="form_email" class="bmd-label-floating col-sm-6">Email</label>
+                <input id="form_email" type="email" name="Email" class="form-control form-control-lg" required="required" data-error="Valid email is required!">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix"></div>
 
-    </footer>
-    <!-- Footer -->
+        <div class="row justify-content-center">
+          <div class="col-sm-6 mb-5">
+            <div class="form-group" data-aos="fade-up">
+              <label for="form_message" class="bmd-label-floating col-sm-12">Message here please</label>
+              <textarea id="form_message" class="form-control form-control-lg" name="Message" rows="5" required="required" data-error="Send a message!"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="mx-auto button-send" data-aos="flip-down">
+            <input type="submit" class="btn btn-success btn-send disabled" value="Send message">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!--##########################################################################################-->
+
+  <!--Footer, it has the section of the navbar "people" in it-->
+  <footer id="People">
+    <div class="container-fluid py-5">
+      <div class="row my-5">
+        <div class="col-md-3 mx-auto my-5 cont-overlay" data-aos="zoom-out-right">
+          <img src="src/assets/*1.png" alt="CEO" width="75%">
+          <div class="overlay">
+            <div class="text"><h4>Víctor Gil Cifuentes</h4></div>
+          </div>
+        </div>
+        <div class="col-md-3 mx-auto my-5 cont-overlay" data-aos="zoom-out-up">
+          <img src="src/assets/*2.png" alt="CLO" width="75%">
+          <div class="overlay">
+          <div class="text"><h4>Cruz Guijarro</h4></div>
+          </div>
+        </div>
+        <div class="col-md-3 mx-auto my-5 cont-overlay" data-aos="zoom-in-up">
+          <img src="src/assets/*3.png" alt="COO" width="75%">
+          <div class="overlay">
+          <div class="text"><h4>Daniel Nava</h4></div>
+          </div>
+        </div>
+        <div class="col-md-3 mx-auto my-5 cont-overlay" data-aos="zoom-out-left">
+          <img src="src/assets/*4.png" alt="COO" width="75%">
+          <div class="overlay">
+          <div class="text"><h4>Joaquín Rus Pezzi</h4></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer container-fluid">
+      <div id="button">
+        <img src="src/assets/Icon.png" width="75em" alt="icon">
+      </div>
+      <div id="container">
+        <div id="cont">
+          <div class="footer_center">
+            <h3>Clas</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--##########################################################################################-->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function() {
+      $('body').bootstrapMaterialDesign();
+    });
+  </script>
+</body>
 
 </html>
+
