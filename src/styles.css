@@ -3,6 +3,7 @@ html {
 }
 
 body {
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   height: 100%;
   position: relative;
@@ -10,6 +11,7 @@ body {
 }
 
 footer {
+  font-family: 'Roboto', sans-serif;
   position: relative;
 }
 
@@ -272,7 +274,7 @@ footer {
   text-align:center;
 }
 .footer h3{
-	font-family: 'Helvetica';
+  font-family: 'Roboto', sans-serif;
 	font-size: 30px;
 	font-weight: 100;
 	margin-top:70px;
@@ -396,7 +398,7 @@ footer {
 @keyframes blur {
   from {
       opacity: 0;
-      transform: rotatex(180deg);
+      transform: rotatex(90deg);
       filter: blur(20px);
   }
   to {
