@@ -21,7 +21,7 @@
   <nav id="nbvr" class="navbar navbar-expand-lg navbar-light fixed-top">
     <a class="navbar-brand" href="#Home"> <img src="src/assets/logo.png" alt="logo" width="180"> </a>
     <button class="navbar-toggler radius" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-      <span type="button" class="btn btn-primary bmd-btn-icon"><i class="material-icons">more_vert</i></span>
+      <span type="button" class="btn btn-primary bmd-btn-icon pt-3"> &#8757; </span>
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav mx-auto">
@@ -44,18 +44,22 @@
 
 <!--Cookies Consent-->
 <div class="row">
-  <div class="col-md-4 col-sm-12 button-fixed Cookies">
+  <div class="col-lg-4 col-sm-12 button-fixed Cookies">
     <div class="p-3 bg-custom text-white alert alert-dismissible fade show">
       <div class="row">
         <div class="col-sm-10">
-          <h5 class="medium">Política de Privacidad de Cookies</h5>
-        </div>
-        <div class="col-2 text-center">
-          
+          <h5 class="medium">Política de Cookies</h5>
         </div>
       </div>
-      <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. (Lorem ipsum generator)
+      <small>Nuestra política de cookies no es agresiva. La información obtenida es totalmente anónima, y en ningún caso puede 
+        ser asociada a un Usuario concreto e identificado. El Titular de esta web sólo obtiene y 
+        conserva la siguiente información acerca de los visitantes del Sitio Web:
+        <ul>
+          <li>El nombre de dominio del proveedor (PSI) y/o dirección IP que les da acceso a la red.</li>
+          <li>La fecha y hora de acceso al sitio Web.</li>
+          <li>La dirección de Internet origen del enlace que dirige al sitio Web.</li>
+          <li>El número de visitantes diarios de cada sección.</li>
+        </ul>
       </small>
       <button type="button" class="close" data-dismiss="alert" aria-label="Close">
         <span aria-hidden="true">&times;</span>
@@ -65,7 +69,7 @@
 </div>
 <!--##########################################################################################-->
 
-<!--Image fades out-->
+ <!--Image fades out-->
   <div class="full first centerall">
     <img src="src/assets/logo.png" width="100%" alt="logo">
   </div>
@@ -73,58 +77,13 @@
 
   <!--First slide (Home)-->
   <main class="full" id="Home">
-    <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
-          <div class="full Home">
-            <div class="octogon">
-              <img src="src/assets/Icon.png" class="animation pt-4" width="50%" alt="logo">
-              <h4 class="text-octogon">Hacia un mundo digital descentralizado...</h4>
-            </div>
-          </div>
-          <ol class="carousel-indicators">
-            <li data-target="#carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel" data-slide-to="1"></li>
-            <li data-target="#carousel" data-slide-to="2"></li>
-            <li data-target="#carousel" data-slide-to="3"></li>
-          </ol>
-          <!--/.Indicators-->
-          <!--Slides-->
-          <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active" style="background-image: url('src/assets/Fractal1.jpg');">
-              <div class="carousel-caption">
-                <h6 class="h6 text-dark backgroundandradius">Redes blockchain y sidechains</h6>
-              </div>
-            </div>
-            <div class="carousel-item" style="background-image: url('src/assets/Fractal2.jpg');">
-              <div class="carousel-caption">
-                <h6 class="h6 text-dark backgroundandradius">Diseño de tokens y DApps sobre Smart Contracts</h6>
-              </div>
-            </div>
-            <div class="carousel-item" style="background-image: url('src/assets/Fractal3.png');">
-              <div class="carousel-caption">
-                <h6 class="h6 text-dark backgroundandradius">Trazabilidad en cadenas de suministros y servicios financieros</h6>
-              </div>
-            </div>
-            <div class="carousel-item" style="background-image: url('src/assets/Document.jpg');">
-              <div class="carousel-caption">
-                <h6 class="h6 text-dark backgroundandradius">Somos puente entre ambos mundos</h6>
-              </div>
-            </div>
-          </div>
-          <!--/.Slides-->
-          <!--Controls-->
-          <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Anterior</span>
-          </a>
-          <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Siguiente</span>
-          </a>
-          <!--/.Controls-->
-        </div>
-        <!--/.Carousel Wrapper-->
+    <div class="full Home">
+      <div class="octogon">
+        <img src="src/assets/Icon.png" class="pt-4" width="50%" alt="logo">
+        <h4 class="text-octogon">Hacia un mundo digital descentralizado...</h4>
       </div>
-    </main>
+    </div>          
+  </main>
   <!--##########################################################################################-->
   <!-- Pyramid (coming soon...)
   <div class="full">
@@ -162,123 +121,64 @@
   <!--Second slide(Steps)-->
 
   <div class="full centerall" id="Steps">
-    <!--Accordion wrapper-->
-    <div class="container col-sm-10 py-5 my-5 aos-repair" id="accordion" role="tablist">
-      <div class="card" data-aos="fade-right">
-        <div class="card-header" role="tab" id="heading1">
-          <h5 class="text-uppercase mb-0 py-1">
-            <a class="white-text font-weight-bold hide" data-toggle="collapse" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
-              Paso 1: Inmutabilización y Privacidad <img class="hidden-item float-right" src="src/assets/networking.png" width="32.5em" alt="arrow-down">
-            </a>
-          </h5>
-        </div>
-        <div id="collapse1" class="collapse" role="tabpanel" aria-labelledby="heading1" data-parent="#accordion">
-          <div class="card-body">
-            <div class="row my-4">
-              <div class="col-md-12">
-                <h2 class="font-weight-bold mb-3 black-text">Primero</h2>
-                <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                  ullamco laborisLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                  incididunt ut labore et dolore magna aliqua.</p>
-                <p class="mb-0">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                  fugiat nulla pariatur.</p>
+
+    <div class="container">
+      <div class="row">
+          <div class="col-sm-12 aos-repair">
+              <div class="main-timeline">
+                  <div class="timeline mt-5 pt-5" data-aos="fade-right">
+                      <div class="timeline-content">
+                          <h3 class="title">Paso 1: Inmutabilización y Privacidad de Datos</h3>
+                          <br>
+                          <p class="description">Los datos virtuales son muy sensibles a la alteración y modificación. para ello el proceso de inmutabilización, representa 
+                            un paso fundamental para un buen procesamiento de datos dentro de cualquier organización o empresa. <br> <br>
+                            La inmutabilización, permite vincular cualquier tipo de dato a una o varias cadenas de bloques ya existentes, por lo que las 
+                            organizaciones y empresas podrán contar con una certificación Blockchain verificable públicamente, mientras mantienen sus datos de forma privada, 
+                            sin necesidad de modificar sus sistemas de software. <br> <br>
+                            Adicionalmente permite verificar la integridad de los datos y la autenticidad de los mismos, 
+                            esto sobre una capa trustless de seguridad y transparencia de una blockchain realmente distribuida y descentralizada sin requerir una inversión significativa.
+                          </p>
+                      </div>
+                  </div>
+                  <div class="timeline" data-aos="fade-left">
+                      <div class="timeline-content">
+                          <h3 class="title">Paso 2: Integración y Organización de la Información</h3>
+                          <br>
+                          <p class="description">En los sistemas de datos convencionales, por ejemplo las bases de datos, ERPs, CRMs y otros, 
+                            se presenta un gran problema de compatibilidad de software. Mediante el uso de sistemas descentralizados, <span class="bold"> es posible 
+                            interconectar distintos sistemas de datos entre sí, manteniendo la privacidad y propiedad de los mismos. </span> <br> <br>
+                            Con la integración mediante blockchain, es posible hacer que múltiples participantes que tienen que <span class="bold"> intercambiar 
+                            documentación </span>, puedan hacerlo incluso <span class="bold"> sin existir confianza entre las partes</span>, esto representa una <span class="bold"> mejora significativa </span> ya 
+                            que los procesos de gestión de la información se vuelve <span class="bold"> más eficiente, ahorrando tiempo y dinero. </span> <br> <br>
+                            La integración documental descentralizada, es posible <span class="bold"> sin tener que modificar el sistema que se esté utilizando </span>, cada organización o empresas, 
+                            <span class="bold"> puede seguir usando su propio software y base de datos </span>, pero contando a su vez con un <span class="bold">sistema de autentificación documental</span> en el que es posible controlar 
+                            la <span class="bold">gestión de versiones y ciclo de vida de los  documentos.</span>
+                          </p>
+                      </div>
+                  </div>
+                  <div class="timeline" data-aos="fade-right">
+                      <div class="timeline-content">
+                          <h3 class="title">Paso 3: Tokenización</h3>
+                          <br>
+                          <p class="description">Datos personales, documentos legales, activos físicos/inmateriales, 
+                            o simplemente información puede ser tokenizada para ser intercambiada de manera mas eficiente y de 
+                            acuerdo a un sistema de toma de decisiones eficiente y transparente. <br> <br>
+                            Añádele el poder del sector financiero a tu negocio y hazte con el valor que han sustraido a tu nicho de mercado.</p>
+                      </div>
+                  </div>
+                  <div class="timeline mb-5 pb-5" data-aos="fade-left">
+                      <div class="timeline-content">
+                          <h3 class="title">Paso 4: Inteligencia</h3>
+                          <br>
+                          <p class="description">Una vez recogido los datos brutos, organizada y compartida la información y 
+                            valorizada el conocimiento mediante la takenización, podemos aplicar la decentralización 
+                            de las tecnologías DLT/Blockchain para extraer las relaciones causas-efecto y ajustar nuestro modelo de recoger los datos mediante un proceso de mejora continua.</p>
+                      </div>
+                  </div>
               </div>
-              <div class="col-md-4 mt-3 pt-2">
-                <div class="accordion-image">
-                  <img src="src/assets/test.jpg" alt="" class="img-fluid">
-                </div>
-              </div>
-            </div>
           </div>
-        </div>
       </div>
-      <div class="card" data-aos="fade-left">
-        <div class="card-header blue lighten-3 z-depth-1" role="tab" id="heading2">
-          <h5 class="text-uppercase mb-0 py-1">
-            <a class="collapsed font-weight-bold white-text hide" data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
-              Paso 2: Integración <img class="hidden-item cloud float-right" src="src/assets/steps.png" width="32.5em" alt="arrow-down">
-            </a>
-          </h5>
-        </div>
-        <div id="collapse2" class="collapse" role="tabpanel" aria-labelledby="heading2" data-parent="#accordion">
-          <div class="card-body">
-            <div class="row my-4">
-              <div class="col-md-12">
-                <h2 class="font-weight-bold mb-3 black-text">Segundo</h2>
-                <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                  ullamco laboris</p>
-                <p class="mb-0">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                  fugiat nulla pariatur.</p>
-              </div>
-              <div class="col-md-4 mt-3 pt-2">
-                <div class="accordion-image">
-                  <img src="src/assets/test.jpg" alt="" class="img-fluid">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card" data-aos="fade-right">
-        <div class="card-header blue lighten-3 z-depth-1" role="tab" id="heading3">
-          <h5 class="text-uppercase mb-0 py-1">
-            <a class="collapsed font-weight-bold white-text hide" data-toggle="collapse" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
-              Paso 3: Tokenización <img class="hidden-item float-right img-fluid" src="src/assets/computer.png" width="32.5em" alt="arrow-down">
-            </a>
-          </h5>
-        </div>
-        <div id="collapse3" class="collapse" role="tabpanel" aria-labelledby="heading3" data-parent="#accordion">
-          <div class="card-body">
-            <div class="row my-4">
-              <div class="col-md-12">
-                <h2 class="font-weight-bold mb-3 black-text">Tercero</h2>
-                <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                  ullamco laboris</p>
-                <p class="mb-0">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                  fugiat nulla pariatur.</p>
-              </div>
-              <div class="col-md-4 mt-3 pt-2">
-                <div class="accordion-image">
-                  <img src="src/assets/test.jpg" alt="" class="img-fluid">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card" data-aos="fade-left">
-        <div class="card-header blue lighten-3 z-depth-1" role="tab" id="heading4">
-          <h5 class="text-uppercase mb-0 py-1">
-            <a class="collapsed font-weight-bold white-text hide" data-toggle="collapse" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
-              Paso 4: Inteligencia <img class="hidden-item cloud float-right" src="src/assets/nodes.png" width="32.5em" alt="arrow-down">
-            </a>
-          </h5>
-        </div>
-        <div id="collapse4" class="collapse" role="tabpanel" aria-labelledby="heading4" data-parent="#accordion">
-          <div class="card-body">
-            <div class="row my-4">
-              <div class="col-md-12">
-                <h2 class="font-weight-bold mb-3 black-text">Cuarto</h2>
-                <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                  ullamco laboris</p>
-                <p class="mb-0">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                  fugiat nulla pariatur.</p>
-              </div>
-              <div class="col-md-4 mt-3 pt-2">
-                <div class="accordion-image">
-                  <img src="src/assets/test.jpg" alt="" class="img-fluid">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--Accordion wrapper-->
-    </div>
+  </div>
   
     </div>
     
@@ -354,34 +254,34 @@
       <div class="row my-5">
         <div class="col-md-3 mx-auto my-5 cont-overlay" data-aos="zoom-out-right">
           <div class="img-shadow cont-overlay">
-            <img src="src/assets/*1.png" class="photo" alt="CEO" width="250vh">
+            <img src="src/assets/*1.png" class="photo img-fluid" alt="CEO" width="250">
           </div>
           <div class="overlay">
-            <div class="text"><h4>Víctor Gil Cifuentes</h4></div>
+            <div class="text">Víctor Gil Cifuentes</div>
           </div>
         </div>
         <div class="col-md-3 mx-auto my-5 cont-overlay" data-aos="zoom-out-up">
           <div class="img-shadow cont-overlay">
-            <img src="src/assets/*2.png" class="photo" alt="CLO" width="250vh">
+            <img src="src/assets/*2.png" class="photo img-fluid" alt="CLO" width="250">
           </div>
           <div class="overlay">
-            <div class="text"><h4>Cruz Guijarro</h4></div>
+            <div class="text">Cruz Guijarro</div>
           </div>
         </div>
         <div class="col-md-3 mx-auto my-5 cont-overlay" data-aos="zoom-in-up">
           <div class="img-shadow cont-overlay">
-            <img src="src/assets/*3.png" class="photo" alt="CPO" width="250vh">
+            <img src="src/assets/*3.png" class="photo img-fluid" alt="CPO" width="250">
           </div>
           <div class="overlay">
-            <div class="text"><h4>Daniel Nava</h4></div>
+            <div class="text">Daniel Nava</div>
           </div>
         </div>
         <div class="col-md-3 mx-auto my-5 cont-overlay" data-aos="zoom-out-left">
           <div class="img-shadow cont-overlay">
-            <img src="src/assets/*4.png" class="photo" alt="COO" width="250vh">
+            <img src="src/assets/*4.png" class="photo img-fluid" alt="COO" width="250">
           </div>
           <div class="overlay">
-            <div class="text"><h4>Joaquín Rus Pezzi</h4></div>
+            <div class="text">Joaquín Rus Pezzi</div>
           </div>
         </div>
       </div>
@@ -393,13 +293,200 @@
       <div id="container">
         <div id="cont">
           <div class="footer_center">
-            <h3>Clas</h3>
+          <!-- <h3> Copyright 2020 &copy; </h3> -->
+            <a href="#Legal" data-target="#Legal" data-toggle="modal"><h3>Aviso Legal</h3></a>
           </div>
         </div>
       </div>
     </div>
   </footer>
   <!--##########################################################################################-->
+    <!--Modal Aviso legal-->
+    <div class="modal fade" id="Legal" tabindex="-1" role="dialog" aria-labelledby="Legal" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="Legal_Title">Aviso Legal (<a href="mailto:legal@dteil.org">legal@dteil.org</a>):</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h4>Identificación y Titularidad</h4>
+            <br>
+            <p>En cumplimiento del artículo 10 de la Ley 34 / 2002, 
+              de 11 de julio, de Servicios de la Sociedad de la Información y Comercio Electrónico, 
+              el Titular expone sus datos identificativos.
+            </p>
+            <ul>
+              <li> <h6>Correo electrónico:</h6> <a href="mailto:legal@dteil.org">legal@dteil.org</a> </li>
+              <li> <h6>Sitio Web:</h6> <a href="https://www.dteil.org">https://www.dteil.org</a></li>
+            </ul>
+            <br>
+            <h4>Finalidad</h4>
+            <p>La finalidad del sitio Web <a href="https://dteil.org">https://dteil.org</a> es informar.</p>
+            <h4>Condiciones de Uso</h4>
+            <br>
+            <p>La utilización del sitio Web le otorga la condición de Usuario, e implica la aceptación 
+              completa de todas las cláusulas y condiciones de uso incluidas en las páginas:
+            </p>
+            <ul>
+              <li>Aviso Legal</li>
+              <li>Política de Privacidad</li>
+              <li>Política de Cookies</li>
+            </ul>
+            <p>
+
+              Si no estuviera conforme con todas y cada una de estas cláusulas y condiciones absténgase 
+              de utilizar este sitio Web.
+              <br>
+              El acceso a este sitio Web no supone, en modo alguno, el inicio de una relación 
+              comercial con el Titular.
+              <br>
+              A través de este sitio Web, el Titular le facilita el acceso y la utilización de 
+              diversos contenidos que el Titular o sus colaboradores han publicadon por medio de Internet.
+              <br>
+              A tal efecto, usted está obligado y comprometido a NO utilizar cualquiera 
+              de los contenidos del sitio Web con fines o efectos ilícitos, prohibidos en este Aviso 
+              Legal o por la legislación vigente, lesivos de los derechos e intereses de terceros, 
+              o que de cualquier forma puedan dañar, inutilizar, sobrecargar, deteriorar o impedir la 
+              normal utilización de los contenidos, los equipos informáticos o los documentos, archivos y 
+              toda clase de contenidos almacenados en cualquier equipo informático propios o contratados 
+              por el Titular, de otros usuarios o de cualquier usuario de Internet.
+            </p>
+            <br>
+            <h4>Medidas de seguridad</h4>
+            <br>
+            <p>
+              Los datos personales que facilite al Titular pueden ser almacenados en bases 
+              de datos automatizadas o no, cuya titularidad corresponde en exclusiva a el Titular, 
+              que asume todas las medidas de índole técnica, organizativa y de seguridad que garantizan 
+              la confidencialidad, integridad y calidad de la información contenida en las mismas de 
+              acuerdo con lo establecido en la normativa vigente en protección de datos.
+              <br>
+              No obstante, debe ser consciente de que las medidas de seguridad de los sistemas 
+              informáticos en Internet no son enteramente fiables y que, por tanto el Titular no 
+              puede garantizar la inexistencia de virus u otros elementos que puedan producir alteraciones 
+              en los sistemas informáticos (software y hardware) del Usuario o en sus documentos electrónicos 
+              y ficheros contenidos en los mismos aunque el Titular pone todos los medios necesarios y toma las 
+              medidas de seguridad oportunas para evitar la presencia de estos elementos dañinos.
+            </p>
+              <br>
+              <h4>Datos personales</h4>
+              <br>
+              <p>
+                Usted puede consultar toda la información relativa al tratamiento de datos personales 
+                que recoge el Titular en la página de la Política de Privacidad.
+              </p>
+              <br>
+              <h4>Contenidos</h4>
+              <p>
+                El Titular ha obtenido la información, el contenido multimedia y 
+                los materiales incluidos en el sitio Web de fuentes que considera 
+                fiables, pero, si bien ha tomado todas las medidas razonables para asegurar que la información 
+                contenida es correcta, el Titular no garantiza que sea exacta, completa o actualizada. El Titular declina 
+                expresamente cualquier responsabilidad por error u omisión en la información contenida en las páginas de este 
+                sitio Web.
+                <br>
+                Queda prohibido transmitir o enviar a través del sitio Web cualquier contenido ilegal o ilícito, 
+                virus informáticos, o mensajes que, en general, afecten o violen derechos de el Titular o de terceros.
+                <br>
+                Los contenidos del Sitio Web tienen únicamente una finalidad informativa y bajo ninguna circunstancia deben 
+                usarse ni considerarse como oferta de venta, solicitud de una oferta de compra ni recomendación para realizar 
+                cualquier otra operación, salvo que así se indique expresamente.
+                <br>
+                El Titular se reserva el derecho a modificar, suspender, cancelar o restringir el contenido del Sitio Web, 
+                los vínculos o la información obtenida a través del sitio Web, sin necesidad de previo aviso.
+                <br>
+                El Titular no es responsable de los daños y perjuicios que pudieran derivarse de la utilización 
+                de la información del sitio Web o de la contenida en las redes sociales del Titular.
+              </p>
+              <br>
+              <h4>Política de cookies</h4>
+              <br>
+              <p>
+                En la página Política de Cookies puede consultar toda la información relativa a la política de recogida y 
+                tratamiento de las cookies.
+                <br>
+                El Titular sólo obtiene y conserva la siguiente información acerca de los visitantes del Sitio Web:
+                <ul>
+                  <li>El nombre de dominio del proveedor (PSI) y/o dirección IP que les da acceso a la red.</li>
+                  <li>La fecha y hora de acceso al sitio Web.</li>
+                  <li>La dirección de Internet origen del enlace que dirige al sitio Web.</li>
+                  <li>El número de visitantes diarios de cada sección.</li>
+                  <li>La información obtenida es totalmente anónima, y en ningún caso puede ser asociada a un Usuario concreto e identificado.</li>
+                </ul>
+              </p>
+              <br>
+              <h4>Enlaces de interés a otros sitios Web</h4>
+              <br>
+              <p>
+                El Titular puede proporcionarle acceso a sitios Web de terceros mediante enlaces con la finalidad de informar sobre la existencia de otras 
+                fuentes de información en Internet en las que podrá ampliar los datos ofrecidos en el sitio Web.
+                <br>
+                Estos enlaces a otros sitios Web no suponen en ningún caso una sugerencia o recomendación para que usted visite las páginas web de destino, 
+                que están fuera del control del Titular, por lo que Titular no es responsable del contenido de los sitios web vinculados ni del resultado que 
+                obtenga al seguir los enlaces.
+                <br>
+                Asimismo, el Titular no responde de los links o enlaces ubicados en los sitios web vinculados a los que le proporciona acceso.
+                <br>
+                El establecimiento del enlace no implica en ningún caso la existencia de relaciones entre Titular y el propietario del sitio en el que se establezca 
+                el enlace, ni la aceptación o aprobación por parte del Titular de sus contenidos o servicios.
+                <br>
+                Si accede a un sitio Web externo desde un enlace que encuentre en el Sitio Web usted deberá leer la propia política de privacidad del otro sitio web 
+                que puede ser diferente de la de este sitio Web.
+              </p>
+              <br>
+              <h4>Propiedad intelectual e industrial</h4>
+              <p>
+                Todos los derechos están reservados.
+                <br>
+                Todo acceso a este sitio Web está sujeto a las siguientes condiciones: la reproducción, almacenaje permanente y la difusión de los contenidos 
+                o cualquier otro uso que tenga finalidad pública o comercial queda expresamente prohibida sin el consentimiento previo expreso y por escrito de Titular.
+              </p>
+              <br>
+              <h4>Limitación de responsabilidad</h4>
+              <br>
+              <p>
+                La información y servicios incluidos o disponibles a través de este sitio Web pueden incluir incorrecciones o errores tipográficos. De 
+                forma periódica el Titular incorpora mejoras y/o cambios a la información contenida y/o los Servicios que puede introducir en cualquier 
+                momento.
+                <br>
+                El Titular no declara ni garantiza que los servicios o contenidos sean interrumpidos o que estén libres de errores, que los defectos sean 
+                corregidos, o que el servicio o el servidor que lo pone a disposición estén libres de virus u otros componentes nocivos sin perjuicio de que el Titular 
+                realiza todos los esfuerzos en evitar este tipo de incidentes.
+                <br>
+                Titular declina cualquier responsabilidad en caso de que existan interrupciones o un mal funcionamiento de los Servicios o contenidos ofrecidos en Internet, 
+                cualquiera que sea su causa. Asimismo, el Titular no se hace responsable por caídas de la red, pérdidas de negocio a consecuencia de 
+                dichas caídas, suspensiones temporales de fluido eléctrico o cualquier otro tipo de daño indirecto que te pueda ser causado por causas 
+                ajenas a el Titular.
+                <br>
+                Antes de tomar decisiones y/o acciones con base a la información incluida en el sitio Web, el Titular le recomienda comprobar y contrastar 
+                la información recibida con otras fuentes.
+              </p>
+              <br>
+              <h4>Jurisdicción</h4>
+              <br>
+              <p>
+                Este Aviso Legal se rige íntegramente por la legislación española.
+                <br>
+                Siempre que no haya una norma que obligue a otra cosa, para cuantas cuestiones se susciten sobre la interpretación, 
+                aplicación y cumplimiento de este Aviso Legal, así como de las reclamaciones que puedan derivarse de su uso, las partes acuerdan 
+                someterse a los Jueces y Tribunales de la provincia de Sevilla, con renuncia expresa de cualquier otra jurisdicción que pudiera 
+                corresponderles.
+              </p>
+              <h4>Contacto</h4>
+              <br>
+              En caso de que usted tenga cualquier duda acerca de estas Condiciones legales o quiera realizar cualquier comentario sobre este sitio Web, 
+              puede enviar un mensaje de correo electrónico a la dirección <a href="mailto:legal@dteil.org">legal@dteil.org</a> .
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--##########################################################################################-->
     <!-- Aos first (Animation when scrolling), then jQuery (material design bootstrap), then Popper.js (material design bootstrap), then Bootstrap JS (material design bootstrap) -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
@@ -412,6 +499,17 @@
       $(document).ready(function() {
         $('body').bootstrapMaterialDesign();
       });
+    </script>
+    <script>
+      var navbar = document.getElementById('nbvr');
+      window.onscroll = function() {
+        if (window.pageYOffset > Home.clientHeight) {
+          navbar.style.background = "white";
+        }
+        else {
+          navbar.style.background = "transparent";
+        }
+      }
     </script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="src/Contact.js"></script>
