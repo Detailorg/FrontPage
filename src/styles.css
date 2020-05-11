@@ -208,7 +208,7 @@ footer {
   min-height: 50vh;
   background-color: #eef7f0;
   text-align: right;
-  padding: 15px 20px 15px 20px;
+  padding: 30px 40px 30px 40px;
   margin: 0 auto;
   border-radius: 20px;
   display: block;
@@ -252,63 +252,6 @@ footer {
 .main-timeline .timeline:nth-child(4n+4) .timeline-content {
   background-color: #fdfce7;
   text-align: left;
-}
-@media only screen and (max-width:990px) {
-  .main-timeline .timeline-content {
-      padding: 15px 20px 15px 20px;
-  }
-  .main-timeline .timeline:nth-child(even) .timeline-content {
-      padding: 15px 20px 15px 20px;
-  }
-  .main-timeline .timeline .timeline-content::before,
-  .main-timeline .timeline .timeline-content::after {
-      width: 33%;
-  }
-}
-
-@media only screen and (max-width:767px) {
-  .main-timeline::before {
-      left: 0;
-  }
-  .main-timeline .timeline {
-      width: 100%;
-      padding: 0 0 0 20px;
-      margin: 0 0 20px;
-  }
-  .main-timeline .timeline:nth-child(even) {
-      padding: 0 0 0 20px;
-      margin: 0 0 20px;
-  }
-  .main-timeline .timeline:before {
-      right: auto;
-      left: 0;
-  }
-  .main-timeline .timeline::after {
-      right: auto;
-      left: -8px;
-  }
-  .main-timeline .timeline .timeline-content {
-      padding: 15px 15px 15px 15px;
-      border-radius: 30px;
-  }
-  .main-timeline .timeline .timeline-content::before {
-      width: 85px;
-      right: auto;
-      left: 0;
-  }
-  .main-timeline .timeline .timeline-content::after {
-      width: 85px;
-      right: auto;
-      left: 0;
-  }
-  .main-timeline .title {
-      font-size: 18px;
-  }
-}
-
-#People {
-  text-align: center;
-  background-color: lightgray;
 }
 
 .footer #button{
@@ -378,7 +321,14 @@ footer {
 	font-size: 30px;
 	font-weight: 100;
 	margin-top:70px;
-	margin-left:40px;
+  margin-left:40px;
+  color: aquamarine;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.footer h3:hover {
+  color: #eaf5fb;
 }
 
 .text {
@@ -411,10 +361,12 @@ footer {
   right: 0;
   height: 20vh;
   width: 20vh;
-  opacity: 0;
-  transition: 1s ease;
   background-color: rgba(255, 255, 255, 0.3);
   z-index: 5;
+  transform: rotatex(90deg);
+  filter: blur(20px);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .cont-overlay {
@@ -425,14 +377,22 @@ footer {
 }
 
 .cont-overlay:hover {
-  animation-fill-mode: forwards;
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
 }
 
 .cont-overlay:hover .overlay {
-  animation: blur .5s;
-  animation-fill-mode: forwards;
+  filter:blur(0);
+  transform: rotatex(0deg);
+}
+
+#nbvr {
+  transition: 0.3s;
+}
+
+#People {
+  text-align: center;
+  background-color: lightgray;
 }
 
 @keyframes fade-out {
@@ -466,15 +426,55 @@ footer {
   }
 }
 
-@keyframes blur {
-  from {
-      opacity: 0;
-      transform: rotatex(90deg);
-      filter: blur(20px);
+@media only screen and (max-width:990px) {
+  .main-timeline .timeline-content {
+      padding: 15px 20px 15px 20px;
   }
-  to {
-      filter:blur(0);
-      opacity: 1;
-      transform: rotatex(0deg);
+  .main-timeline .timeline:nth-child(even) .timeline-content {
+      padding: 15px 20px 15px 20px;
+  }
+  .main-timeline .timeline .timeline-content::before,
+  .main-timeline .timeline .timeline-content::after {
+      width: 33%;
+  }
+}
+
+@media only screen and (max-width:767px) {
+  .main-timeline::before {
+      left: 0;
+  }
+  .main-timeline .timeline {
+      width: 100%;
+      padding: 0 0 0 20px;
+      margin: 0 0 20px;
+  }
+  .main-timeline .timeline:nth-child(even) {
+      padding: 0 0 0 20px;
+      margin: 0 0 20px;
+  }
+  .main-timeline .timeline:before {
+      right: auto;
+      left: 0;
+  }
+  .main-timeline .timeline::after {
+      right: auto;
+      left: -8px;
+  }
+  .main-timeline .timeline .timeline-content {
+      padding: 15px 15px 15px 15px;
+      border-radius: 30px;
+  }
+  .main-timeline .timeline .timeline-content::before {
+      width: 85px;
+      right: auto;
+      left: 0;
+  }
+  .main-timeline .timeline .timeline-content::after {
+      width: 85px;
+      right: auto;
+      left: 0;
+  }
+  .main-timeline .title {
+      font-size: 18px;
   }
 }
