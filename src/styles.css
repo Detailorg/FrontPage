@@ -3,15 +3,16 @@ html {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
   margin: 0;
   height: 100%;
+  background-color: white;
   position: relative;
   overflow-x: hidden;
 }
 
 footer {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
   position: relative;
 }
 
@@ -27,8 +28,13 @@ footer {
   border-radius: 30px;
 }
 
-.bg-custom {
+.bg1-custom {
   background-color: rgba(65, 65, 64, 0.6);
+  border-radius: 30px;
+}
+
+.bg2-custom {
+  background-color: #e9e9e91f;
   border-radius: 30px;
 }
 
@@ -62,13 +68,6 @@ footer {
   position: absolute;
   z-index: 12;
 }
-
-/* ---- particles.js container ---- */
-#particles-js{ 
-  position: absolute;
-  width: 100%;
-  height: 150vh;
-} 
 
 .bold {
   font-weight: 900;
@@ -105,8 +104,8 @@ footer {
 }
 
 .text-octogon {
-  font-size: 3vh;
-  margin: .4em auto .3em auto;
+  font-size: 4vh;
+  margin: .5em auto .3em auto;
   line-height: 5vh;
   position: absolute;
 }
@@ -116,7 +115,7 @@ footer {
   border-top: 0;
   border-left: 0;
   border-radius: 20px;
-  color: rgb(0, 182, 0);
+  color: #A5D5B4;
 }
 
 .Home {
@@ -327,7 +326,7 @@ footer {
   text-align:center;
 }
 .footer h3{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
 	font-size: 30px;
 	font-weight: 100;
 	margin-top:70px;
@@ -395,19 +394,45 @@ footer {
 }
 
 #nbvr {
-  transition: 0.3s;
+  transition: 1s;
 }
+
+#logo {
+  transition: 1s;
+}
+
+/* ---- particles.js container ---- */
+#particles-js{ 
+  position: absolute;
+  width: 100%;
+  height: 200vh;
+} 
 
 #Home {
   background-image: url("assets/Fractal1.jpg");
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
 }
 
+.bottom-fade {
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  position: absolute;
+  background: url("assets/bottom-fade.png") bottom center repeat-x;
+}
+
 #People {
   text-align: center;
-  background-color: lightgray;
+  background-image: url(https://freesvg.org/img/1307414874.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: unset;
 }
 
 @keyframes fade-out {
@@ -545,5 +570,13 @@ footer {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+  }
+
+  .bottom-fade {
+    width: 100%;
+    height: 100%;
+    bottom: -16vh;
+    position: absolute;
+    background: url("assets/bottom-fade.png") bottom center repeat-x;
   }
 }
