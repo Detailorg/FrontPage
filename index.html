@@ -16,30 +16,66 @@
   <link rel="stylesheet" href="src/styles.css">
 </head>
 
+<!--Particles-js-->
+<div id="particles-js"></div>
+
 <body data-spy="scroll" data-target="#nbvr" data-offset="0">
   <!--Navbar-->
-  <nav id="nbvr" class="navbar navbar-expand-lg navbar-light fixed-top">
+  <nav id="nbvr" class="navbar navbar-expand-lg navbar-light fixed-top"data-toggle="collapse" data-target=".navbar-collapse.show">
     <a class="navbar-brand" href="#Home"> <img id="logo" src="src/assets/logo.png" alt="logo" width="180"> </a>
-    <button class="navbar-toggler radius" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler radius" type="button" data-toggle="collapse" data-target="#navbarLinks" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span type="button" class="btn btn-primary bmd-btn-icon pt-3"> &#8757; </span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarText">
+    <div class="collapse navbar-collapse justify-content-between" id="navbarLinks">
       <ul class="navbar-nav">
-        <li class="nav-item">
+        <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
           <a class="nav-link backgroundandradius" href="#Steps"><strong class="bold">Pasos</strong></a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
           <a class="nav-link backgroundandradius" href="#Contact"><strong class="bold">Contacto</strong></a>
         </li>
-        <li>
+        <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
           <a class="nav-link backgroundandradius" href="#People"><strong class="bold">Equipo</strong></a>
         </li>
       </ul>
-      <!--
-     <span class="backgroundandradius float-right mx-auto">
-        <small><i>motto empresa</i></small>
+      
+     <span class="float-right icons pt-2">
+       <div class="soc">
+      <a class="github" href="https://github.com/dTeilorg" title="GitHub">
+          <svg viewbox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
+            <path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 
+            12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 
+            1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 
+            -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 
+            51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 
+            25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 
+            12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 
+            70.7 256 70.7z">
+          </path>
+          </svg>
+      </a>
+        <a class="twitter" href="#" title="Twitter">
+            <svg viewbox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
+              <path d="M419.6 168.6c-11.7 5.2-24.2 8.7-37.4 10.2 13.4-8.1 23.8-20.8 28.6-36 -12.6 7.5-26.5 
+              12.9-41.3 15.8 -11.9-12.6-28.8-20.6-47.5-20.6 -42 0-72.9 39.2-63.4 79.9 -54.1-2.7-102.1-28.6-134.2-68 
+              -17 29.2-8.8 67.5 20.1 86.9 -10.7-0.3-20.7-3.3-29.5-8.1 -0.7 30.2 20.9 58.4 52.2 64.6 -9.2 2.5-19.2 
+              3.1-29.4 1.1 8.3 25.9 32.3 44.7 60.8 45.2 -27.4 21.4-61.8 31-96.4 27 28.8 18.5 63 29.2 99.8 29.2 120.8 
+              0 189.1-102.1 185-193.6C399.9 193.1 410.9 181.7 419.6 168.6z">
+            </path>
+            </svg>
+        </a>
+        <a class="linkedin" href="#" title="LinkedIn">
+            <svg viewbox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
+              <path d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 
+              107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 
+              0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 
+              0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z">
+            </path>
+            </svg>
+        </a>
+      </div>
       </span>
-      -->
+      
     </div>
   </nav>
   <!--##########################################################################################-->
@@ -54,14 +90,7 @@
         </div>
       </div>
       <small>Nuestra política de cookies no es agresiva. La información obtenida es totalmente anónima, y en ningún caso puede 
-        ser asociada a un Usuario concreto e identificado. El Titular de esta web sólo obtiene y 
-        conserva la siguiente información acerca de los visitantes del Sitio Web:
-        <ul>
-          <li>El nombre de dominio del proveedor (PSI) y/o dirección IP que les da acceso a la red.</li>
-          <li>La fecha y hora de acceso al sitio Web.</li>
-          <li>La dirección de Internet origen del enlace que dirige al sitio Web.</li>
-          <li>El número de visitantes diarios de cada sección.</li>
-        </ul>
+        ser asociada a un Usuario concreto e identificado. Más información en " <a href="#People" data-target="#Legal" data-toggle="modal" class="turquoise">Aviso-Legal</a> " en el apartado de Política de Cookies.
       </small>
       <button type="button" class="close" data-dismiss="alert" aria-label="Close">
         <span aria-hidden="true">&times;</span>
@@ -80,15 +109,14 @@
   <!--First slide (Home)-->
   <main class="full" id="Home">
     <div class="full Home">
-      <div id="particles-js"></div>
       <div class="octogon">
         <img src="src/assets/Icon.png" class="pt-4" width="50%" alt="logo">
-        <h4 class="text-octogon">Hacia un mundo digital descentralizado...</h4>
+        <h4 class="text-octogon">Un nuevo modelo de Transformación Digital (Trust included)</h4>
       </div>
     </div>
-    
+    <div class="bottom-fade"></div>
   </main>
-  <div class="bottom-fade"></div>
+ 
   <!--##########################################################################################-->
   <!-- Pyramid (coming soon...)
   <div class="full">
@@ -126,87 +154,69 @@
   <!--Second slide(Steps)-->
 
   <div class="full centerall" id="Steps">
-
     <div class="container">
       <div class="row">
           <div class="col-sm-12 aos-repair">
               <div class="main-timeline">
                   <div class="timeline mt-5 pt-5" data-aos="fade-right">
                       <div class="timeline-content">
-                          <h3 class="title">Paso 1: Inmutabilización</h3>
+                          <h3 class="title center-heading">Paso 1: Inmutabilización</h3>
+                          <img class="center-img img-fluid" src="src/assets/Guaranteed.svg" alt="Blockchain Guaranteed" width="250">
+                          <p class="description">Vinculación de cualquier tipo de datos con cadenas de bloques públicas, como por ejemplo Bitcoin.<br> <br>
+                            De esta forma conseguimos un <span class="bold">Sistema de Certificación</span> que permite verificar públicamente datos que se mantienen en el ámbito privado,
+                            pudiendo comprobar la integridad y autenticidad de los mismos de forma segura y transparente, manteniendo la infraestructura IT actual.                          </p>
                           <br>
-                          <p class="description">Los datos virtuales son muy sensibles a la alteración y modificación. Para ello el proceso de inmutabilización, representa 
-                            <span class="bold">un paso fundamental para un buen procesamiento de datos en cualquier organización.</span> <br> <br>
-                            La inmutabilización, permite <span class="bold">vincular cualquier tipo de dato a una o varias cadenas de bloques ya existentes</span>,
-                             por lo que las organizaciones y empresas podrán <span class="bold">contar con una certificación Blockchain verificable públicamente</span>, mientras <span class="bold">se mantienen los datos de forma privada</span>, 
-                             adicionalmente <span class="bold">no es necesario cambiar el software</span> de gestión que las organizaciones y empresas tienen funcionando actualmente. <br> <br>
-                            Adicionalmente permite <span class="bold">verificar la integridad de los datos y la autenticidad de los mismos</span>, 
-                            esto sobre una capa <span class="bold">trustless</span> de <span class="bold">seguridad y transparencia</span> de una blockchain realmente distribuida y descentralizada <span class="bold">sin requerir una gran inversión</span>.
-                          </p>
-                          <br>
-                          <img class="border float-left img-fluid" src="src/assets/Guaranteed.svg" alt="Blockchain Guaranteed" width="250">
                       </div>
                   </div>
                   <div class="timeline" data-aos="fade-left">
                       <div class="timeline-content">
-                          <h3 class="title">Paso 2: Integración</h3>
-                          <br>
-                          <p class="description">En los sistemas de datos convencionales, por ejemplo las bases de datos, ERPs, CRMs y otros, 
-                            se presenta un gran problema de compatibilidad de software. Mediante el uso de sistemas descentralizados, <span class="bold"> es posible 
-                            interconectar distintos sistemas de datos entre sí, manteniendo la privacidad y propiedad de los mismos. </span> <br> <br>
-                            Con la integración mediante blockchain, es posible hacer que múltiples participantes que tienen que <span class="bold"> intercambiar 
-                            documentación </span>, puedan hacerlo incluso <span class="bold"> sin existir confianza entre las partes</span>, esto representa una <span class="bold"> mejora significativa </span> ya 
-                            que los procesos de gestión de la información se vuelve <span class="bold"> más eficiente, ahorrando tiempo y dinero. </span> <br> <br>
-                            La integración documental descentralizada, es posible <span class="bold"> sin tener que modificar el sistema que se esté utilizando </span>, cada organización o empresas, 
-                            <span class="bold"> puede seguir usando su propio software y base de datos </span>, pero contando a su vez con un <span class="bold">sistema de autentificación documental</span> en el que es posible controlar 
-                            la <span class="bold">gestión de versiones y ciclo de vida de los  documentos.</span>
+                          <h3 class="center-heading title">Paso 2: Integración</h3>
+                          <img class="img-fluid center-img" src="src/assets/Puzzle.svg" alt="Puzzle_BCInteration" width="250">
+                          <p class="description">Interconexión de distintos sistemas de datos entre si, manteniendo la privacidad y propiedad de los mismos.<br> <br>
+                            de esta forma es posible intercambiar documentación incluso sin existir confianza entre las partes, utilizando un estándard de comunicación
+                            seguro y eficiente, ahorrando tiempo y dinero.<br> <br>
+                            Somos especialistas en la integración documental descentralizada, logrando que cada organización o empresa, pueda seguir usando 
+                            su propio software y bases de datos, añadiendo un sistema de autentificación documental, en el que es posible controlar la gestión  de versiones
+                            y ciclo de vida de los documentos, así como cualquier tipo de proceso.<br> <br>
                           </p>
                           <br>
-                          <img class="border float-right img-fluid" src="src/assets/Puzzle.svg" alt="Puzzle_BCInteration" width="250">
+                          
                       </div>
                   </div>
                   <div class="timeline" data-aos="fade-right">
                       <div class="timeline-content">
-                          <h3 class="title">Paso 3: Tokenización</h3>
+                          <h3 class="title center-heading">Paso 3: Tokenización</h3>
                           <br>
                           <p class="description">La Tokenización posibilita nuevas formas de <span class="bold">crear valor entre las organizaciones y su entorno</span>, ya que permite registrar, almacenar, e intercambiar, de forma digital y única, 
-                            procesos e información de valor  que son manejados comúnmente en el mundo en el dia a dia, como pueden ser documentos legales, datos personales o sensibles, entre otros.
+                            procesos e información de valor  que son manejados comúnmente en el dia a dia, como pueden ser documentos legales, datos personales o sensibles, entre otros.
                             <br> <br>
                             El proceso de tokenización hace que el <span class="bold">intercambio de valor</span> sea <span class="bold">eficiente y seguro</span>, Ya que los tokens funcionan como <span class="bold">contenedores de valor</span>, los cuales solo <span class="bold">son propiedad de aquel que los posee</span> y de 
-                            nadie más. Esto nos permite una <span class="bold">comprobación de origen y propiedad de la información.</span>
-                            <br> <br>
-                            La tokenización es un <span class="bold">método eficiente en el proceso de toma de decisiones entre particulares.</span> permitiendo que de forma <span class="bold">rápida y transparente</span>, este proceso pueda ser auditado por cada uno 
-                            de los participantes sin tener que confiar en terceros para la contabilización de resultados.
+                            nadie más. Esto nos permite una <span class="bold">comprobación de origen y propiedad de la información, y adicionalmente es una herramienta eficiente para proceso de toma de decisiones entre particulares de forma segura y transparente.
                           </p>
                       </div>
                   </div>
                   <div class="timeline mb-5 pb-5" data-aos="fade-left">
                       <div class="timeline-content">
-                          <h3 class="title">Paso 4: Eficiencia</h3>
+                          <h3 class="title center-heading">Paso 4: Inteligencia</h3>
                           <br>
                           <p class="description">
-                            Corresponde a la fase de <span class="bold">interconectar todos los procesos</span> de la mejor manera. la eficiencia plena se crea al construir una <span class="bold">plataforma con posibilidades de poder 
-                              interconectarse con otras para el intercambio de valor entre sus participantes.</span>
+                            La digitalización e interconexión de cualquier proceso para mejeror la interacción con multiples partes y adicción de capas de ejecución automatizadas.<br> <br>
+                            Que permitan la mejora contínua aportando nueva información de manera descentralizada abiertas a su conexión para el intercambio de valor entre participantes, como por ejemplo una cadena de suministros donde la trazabilidad 
+                            de las operaciones está garantizada. 
                             <br> <br>
-                            Un ejemplo práctico podría ser la cadena de suministros en el que muchos actores desempeñando funciones muy diferentes pudieran establecer <span class="bold">intercambios de manera 
-                              segura y eficiente</span> en donde <span class="bold">independiente del tipo de software, base de datos o blockchain utilizada</span> sea posible el intercambio de información de procesos entre los involucrados 
-                            sin importar el número o qué tan complejo sean dichos procesos, <span class="bold">ahorrando grandes cantidades de dinero, seguridad y transparencia.</span> 
-                            <br> <br>
-                            La eficiencia a la cual nos referimos puede ser descrita  como <span class="bold">un aporte de valor repartido entre todos los involucrados en procesos tecnológicos descentralizados y su entorno.</span>
-
                           </p>
                       </div>
                   </div>
               </div>
           </div>
       </div>
-  </div>
-</div>   
+  </div>  
   <!--##########################################################################################-->
+</div>
 
   <!--Third slide(Contact)-->
   <div class="full centerall" id="Contact">
-    <div class="container col-sm-10 pt-5 bg2-custom">
+    <div class="container col-sm-10 px-3 py-5 my-5 mx-2 bg2-custom">
       <div class="row justify-content-center mb-3">
         <div class="mx-auto">
           <h1 data-aos="zoom-in-up">Contacto</h1>
@@ -218,13 +228,13 @@
           <div class="row justify-content-center aos-repair">
             <div class="col-sm-4" data-aos="fade-down-right">
               <div class="form-group">
-                <label for="form_name" class="bmd-label-floating col-sm-6">Nombre</label>
+                <label for="form_name" class="bmd-label-floating col-sm-6 label-form">Nombre</label>
                 <input id="form_name" type="text" name="Name" class="form-control form-control-lg" required="required" data-error="Necesitamos saber tu nombre.">
               </div>
             </div>
             <div class="col-sm-4" data-aos="fade-down-left">
               <div class="form-group">
-                <label for="form_email" class="bmd-label-floating col-sm-6">Email</label>
+                <label for="form_email" class="bmd-label-floating col-sm-6 label-form">Email</label>
                 <input id="form_email" type="email" name="Email" class="form-control form-control-lg" required="required" data-error="Necesitamos un Email válido">
               </div>
             </div>
@@ -235,8 +245,8 @@
         <div class="row justify-content-center aos-repair">
           <div class="col-sm-6 mb-5" data-aos="fade-up">
             <div class="form-group">
-              <label for="form_message" class="bmd-label-floating col-sm-12">Mensaje</label>
-              <textarea id="form_message" class="form-control form-control-lg" name="Message" rows="5" required="required" data-error="Escribe tu mensaje."></textarea>
+              <label for="form_message" class="bmd-label-floating col-sm-12 label-form">Mensaje</label>
+              <textarea id="form_message" class="form-control form-control-lg" name="Message" required="required" rows="5"  data-error="Escribe tu mensaje."></textarea>
             </div>
           </div>
         </div>
@@ -252,7 +262,7 @@
 </body>
 
   <!--Footer, it has the section of the navbar "people" in it-->
-  <footer id="People">
+  <footer class="full" id="People">
     <div class="container-fluid py-5 aos-repair">
       <div class="row my-5">
         <div class="col-md-3 mx-auto my-5 cont-overlay" data-aos="zoom-out-right">
@@ -296,8 +306,7 @@
       <div id="container">
         <div id="cont">
           <div class="footer_center">
-          <!-- <h3> Copyright 2020 &copy; </h3> -->
-            <a data-target="#Legal" data-toggle="modal"> <h3>Aviso Legal</h3> </a>
+            <a data-target="#Legal" data-toggle="modal"> <h3>Aviso-Legal</h3> </a>
           </div>
         </div>
       </div>
@@ -309,7 +318,7 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h2 class="modal-title" id="Legal_Title">Aviso Legal (<a href="mailto:legal@dteil.org">legal@dteil.org</a>):</h2>
+            <h2 class="modal-title" id="Legal_Title">Aviso-Legal (<a href="mailto:legal@dteil.org">legal@dteil.org</a>):</h2>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -339,7 +348,6 @@
               <li>Política de Cookies</li>
             </ul>
             <p>
-
               Si no estuviera conforme con todas y cada una de estas cláusulas y condiciones absténgase 
               de utilizar este sitio Web.
               <br>
@@ -523,15 +531,15 @@
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
       particlesJS("particles-js", { 
-      "particles":{"number":{"value":18,"density":{"enable":true,"value_area":500}},"color":{"value":"#ffffff"},
-      "shape":{"type":"circle","stroke":{"width":2,"color":"#000000"},"polygon":{"nb_sides":8}},
-      "opacity":{"value":1,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":1,"sync":false}},
-      "size":{"value":1,"random":false,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},
-      "line_linked":{"enable":true,"distance":222,"color":"#000000","opacity":1.5,"width":1},
+      "particles":{"number":{"value":25,"density":{"enable":true,"value_area":800}},"color":{"value":"#000000"},
+      "shape":{"type":"polygon","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":8}},
+      "opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},
+      "size":{"value":3,"random":false,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},
+      "line_linked":{"enable":true,"distance":150,"color":"#000000","opacity":0.4,"width":1},
       "move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},
       "interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"grab"},"onclick":{"enable":false,"mode":"bubble"},"resize":true},
-      "modes":{"grab":{"distance":200,"line_linked":{"opacity":1}},"bubble":{"distance":200,"size":10,"duration":1,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},
-      "retina_detect":false});
+      "modes":{"grab":{"distance":200,"line_linked":{"opacity":1}},"bubble":{"distance":200,"size":10,"duration":1,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":4}}},
+      "retina_detect":true});
     </script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="src/Contact.js"></script>
