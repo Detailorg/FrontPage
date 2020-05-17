@@ -21,6 +21,10 @@ canvas {
   vertical-align: bottom;
 }
 
+textarea {
+  resize: none;
+}
+
 .aos-repair {
   overflow: hidden;
 }
@@ -284,7 +288,7 @@ canvas {
 .main-timeline .timeline-content{
   color: black;
   min-height: 50vh;
-  background-color: #eef7f0;
+  background-image: linear-gradient(white, #99D5B3);
   text-align: right;
   padding: 30px 40px 30px 40px;
   margin: 0 auto;
@@ -320,22 +324,24 @@ canvas {
 }
 
 .main-timeline .timeline:nth-child(4n+2) .timeline-content {
-  background-color: #eaf5fb;
+  background-image: linear-gradient(white, #99DAF4);
   text-align: left; 
 }
 .main-timeline .timeline:nth-child(4n+3) .timeline-content {
-  background-color: #fce9ea;
+  background-image: linear-gradient(white,#F59BA1);
   text-align: right;
 }
 .main-timeline .timeline:nth-child(4n+4) .timeline-content {
-  background-color: #fdfce7;
+  background-image: linear-gradient(white,#FEF79F);
   text-align: left;
 }
 
 .Contact {
   background-color: white;
-  padding-bottom: 11%;
+  bottom: 0;
   z-index: 1;
+  position: absolute;
+  margin-top: 7px;
 }
 
 .footer #button{
@@ -500,6 +506,10 @@ canvas {
   background: url("assets/bottom-fade.png") bottom center repeat-x;
 }
 
+#Contact {
+  position: relative;
+}
+
 #People {
   text-align: center;
   background-image: url(https://freesvg.org/img/1307414874.png);
@@ -622,7 +632,7 @@ canvas {
   .main-timeline .timeline-content{
     color: black;
     min-height: 50vh;
-    background-color: #eef7f0;
+    background-color: #99D5B3;
     text-align: left;
     padding: 30px 40px 30px 40px;
     margin: 0 auto;
@@ -632,15 +642,15 @@ canvas {
     position: relative;
   }
   .main-timeline .timeline:nth-child(4n+2) .timeline-content {
-    background-color: #eaf5fb;
+    background-color: #99DAF4;
     text-align: left; 
   }
   .main-timeline .timeline:nth-child(4n+3) .timeline-content {
-    background-color: #fce9ea;
+    background-color: #F59BA1;
     text-align: left;
   }
   .main-timeline .timeline:nth-child(4n+4) .timeline-content {
-    background-color: #fdfce7;
+    background-color: #FEF79F;
     text-align: left;
   }
 
