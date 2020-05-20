@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   height: 100%;
   background-color: white;
@@ -12,7 +12,7 @@ body {
 }
 
 footer {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   position: relative;
 }
 
@@ -25,11 +25,16 @@ textarea {
   resize: none;
 }
 
+h1, h2, h3, h4, h5 {
+  font-family: 'Jost', sans-serif;
+}
+
 .aos-repair {
   overflow: hidden;
 }
 
 .navbar {
+  font-family: 'Jost', sans-serif;
   z-index: 20;
 }
 
@@ -407,7 +412,7 @@ textarea {
   text-align:center;
 }
 .footer h3{
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Jost', sans-serif;
 	font-size: 30px;
 	font-weight: 100;
 	margin-top:70px;
@@ -491,7 +496,7 @@ textarea {
 } 
 
 #Home {
-  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('assets/Fractal1.jpg');
+  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('assets/Fractal1.svg');
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -512,11 +517,12 @@ textarea {
 
 #People {
   text-align: center;
-  background-image: url(https://freesvg.org/img/1307414874.png);
+  background-image: url("assets/octogono.svg");
+  background-color: white;
   background-attachment: fixed;
   background-position: center;
   background-repeat: repeat;
-  background-size: unset;
+  background-size: 40vh;
   z-index: 1;
 }
 
