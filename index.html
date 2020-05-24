@@ -6,10 +6,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Fonts (Google font API) -->
-  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Montserrat:wght@300&display=swap" rel="stylesheet">
   <!-- Material Design for Bootstrap CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+  <link rel="stylesheet"
+    href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+    integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <title>dTeiL.org</title>
   <link rel="icon" href="src/assets/favicon.ico">
@@ -21,29 +21,31 @@
 
 <body data-spy="scroll" data-target="#nbvr" data-offset="0">
   <!--Navbar-->
-  <nav id="nbvr" class="navbar navbar-expand-lg navbar-light fixed-top"data-toggle="collapse" data-target=".navbar-collapse.show">
-    <a class="navbar-brand" href="#Home"> <img id="logo" src="src/assets/logo.svg" alt="logo" width="180"> </a>
-    <button class="navbar-toggler radius" type="button" data-toggle="collapse" data-target="#navbarLinks" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+  <nav id="nbvr" class="navbar navbar-expand-lg navbar-light fixed-top" data-toggle="collapse"
+    data-target=".navbar-collapse.show">
+    <a class="navbar-brand" href="#Home"> <img id="logo" src="src/assets/logo.svg" alt="logo"> </a>
+    <button class="navbar-toggler radius" type="button" data-toggle="collapse" data-target="#navbarLinks"
+      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span type="button" class="btn btn-primary bmd-btn-icon pt-3"> &#8757; </span>
     </button>
-    <div class="collapse navbar-collapse justify-content-between" id="navbarLinks">
-      <ul class="navbar-nav">
+    <div class="collapse navbar-collapse justify-content-end" id="navbarLinks">
+      <ul class="navbar-nav separation pr-2">
         <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-          <a class="nav-link backgroundandradius" href="#Steps"><strong class="bold">Pasos</strong></a>
+          <a class="nav-link backgroundandradius" href="#Steps"><span class="nav-item-text">Pasos</span></a>
         </li>
         <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-          <a class="nav-link backgroundandradius" href="#Contact"><strong class="bold">Contacto</strong></a>
+          <a class="nav-link backgroundandradius" href="#Contact"><span class="nav-item-text">Contacto</span></a>
         </li>
         <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-          <a class="nav-link backgroundandradius" href="#People"><strong class="bold">Equipo</strong></a>
+          <a class="nav-link backgroundandradius" href="#People"><span class="nav-item-text">Equipo</span></a>
         </li>
       </ul>
-      
-     <span class="float-right icons pt-2">
-       <div class="soc">
-      <a class="github" href="https://github.com/dTeilorg" title="GitHub">
-          <svg viewbox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
-            <path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 
+
+      <span class="float-right icons pt-2 pl-2">
+        <div class="soc">
+          <a class="github" href="https://github.com/dTeilorg" title="GitHub">
+            <svg viewbox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
+              <path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 
             12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 
             1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 
             -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 
@@ -51,56 +53,58 @@
             25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 
             12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 
             70.7 256 70.7z">
-          </path>
-          </svg>
-      </a>
-        <a class="twitter" href="#" title="Twitter">
+              </path>
+            </svg>
+          </a>
+          <a class="twitter" href="#" title="Twitter">
             <svg viewbox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
               <path d="M419.6 168.6c-11.7 5.2-24.2 8.7-37.4 10.2 13.4-8.1 23.8-20.8 28.6-36 -12.6 7.5-26.5 
               12.9-41.3 15.8 -11.9-12.6-28.8-20.6-47.5-20.6 -42 0-72.9 39.2-63.4 79.9 -54.1-2.7-102.1-28.6-134.2-68 
               -17 29.2-8.8 67.5 20.1 86.9 -10.7-0.3-20.7-3.3-29.5-8.1 -0.7 30.2 20.9 58.4 52.2 64.6 -9.2 2.5-19.2 
               3.1-29.4 1.1 8.3 25.9 32.3 44.7 60.8 45.2 -27.4 21.4-61.8 31-96.4 27 28.8 18.5 63 29.2 99.8 29.2 120.8 
               0 189.1-102.1 185-193.6C399.9 193.1 410.9 181.7 419.6 168.6z">
-            </path>
+              </path>
             </svg>
-        </a>
-        <a class="linkedin" href="#" title="LinkedIn">
+          </a>
+          <a class="linkedin" href="#" title="LinkedIn">
             <svg viewbox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
               <path d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 
               107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 
               0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 
               0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z">
-            </path>
+              </path>
             </svg>
-        </a>
-      </div>
+          </a>
+        </div>
       </span>
-      
+
     </div>
   </nav>
   <!--##########################################################################################-->
 
-<!--Cookies Consent-->
-<div class="row">
-  <div class="col-lg-4 col-sm-12 button-fixed Cookies">
-    <div class="p-3 bg1-custom text-white alert alert-dismissible fade show">
-      <div class="row">
-        <div class="col-sm-10">
-          <h5 class="medium">Política de Cookies</h5>
+  <!--Cookies Consent-->
+  <div class="row">
+    <div class="col-lg-4 col-sm-12 button-fixed Cookies">
+      <div class="p-3 bg1-custom text-white alert alert-dismissible fade show">
+        <div class="row">
+          <div class="col-sm-10">
+            <h5>Política de Cookies</h5>
+          </div>
         </div>
+        <p class="space"> <small>Nuestra política de cookies no es agresiva. La información obtenida es totalmente anónima, y en ningún
+          caso puede
+          ser asociada a un Usuario concreto e identificado. Más información en " <a href="#People" data-target="#Legal"
+            data-toggle="modal" class="turquoise">Aviso-Legal</a> " en el apartado de Política de Cookies.
+        </small> </p>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
-      <small>Nuestra política de cookies no es agresiva. La información obtenida es totalmente anónima, y en ningún caso puede 
-        ser asociada a un Usuario concreto e identificado. Más información en " <a href="#People" data-target="#Legal" data-toggle="modal" class="turquoise">Aviso-Legal</a> " en el apartado de Política de Cookies.
-      </small>
-      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-      </button>
     </div>
   </div>
-</div>
-<!--##########################################################################################-->
+  <!--##########################################################################################-->
 
- <!--Image fades out-->
+  <!--Image fades out-->
   <div class="full first centerall">
     <img src="src/assets/logo.png" width="100%" alt="logo">
   </div>
@@ -108,15 +112,16 @@
 
   <!--First slide (Home)-->
   <main class="full" id="Home">
-    <div class="full Home">
-      <div class="octogon">
-        <img src="src/assets/Icon.svg" class="pt-4" width="50%" alt="logo">
-        <h4 class="text-octogon">Un nuevo modelo de Transformación Digital (Trust included)</h4>
+    <div class="full Home" style="pointer-events: none;">
+      <div class="octogon container">
+        <img src="src/assets/Icon.svg" class="img-fluid" width="180vw" alt="logo">
+        <h4 class="text-octogon">Un nuevo modelo de <br> Transformación Digital <br> (Trust included)</h4>
       </div>
     </div>
     <div class="bottom-fade"></div>
   </main>
   <!--##########################################################################################-->
+  
   <!-- Pyramid (coming soon...)
   <div class="full">
     <div class="pyramid">
@@ -152,494 +157,562 @@
 
   <!--Second slide(Steps)-->
 
-  <div class="full centerall" id="Steps">
+  <div class="centerall" id="Steps">
     <div class="container">
       <div class="row">
-          <div class="col-sm-12 aos-repair">
-              <div class="main-timeline">
-                  <div class="timeline mt-5 pt-5" data-aos="fade-right">
-                      <div class="timeline-content">
-                          <h3 class="title center-heading">Paso 1: Inmutabilización</h3>
-                          <img class="center-img img-fluid" src="src/assets/Guaranteed.svg" alt="Blockchain Guaranteed" width="250">
-                          <p class="description">Vinculación de cualquier tipo de datos con cadenas de bloques públicas, como por ejemplo Bitcoin.<br> <br>
-                            De esta forma conseguimos un <span class="bold">Sistema de Certificación</span> que permite verificar públicamente datos que se mantienen en el ámbito privado,
-                            pudiendo comprobar la integridad y autenticidad de los mismos de forma segura y transparente, manteniendo la infraestructura IT actual.                          </p>
-                          <br>
-                      </div>
-                  </div>
-                  <div class="timeline" data-aos="fade-left">
-                      <div class="timeline-content">
-                          <h3 class="center-heading title">Paso 2: Integración</h3>
-                          <img class="img-fluid center-img" src="src/assets/Puzzle.svg" alt="Puzzle_BCInteration" width="250">
-                          <p class="description">Interconexión de distintos sistemas de datos entre si, manteniendo la privacidad y propiedad de los mismos.<br> <br>
-                            de esta forma es posible intercambiar documentación incluso sin existir confianza entre las partes, utilizando un estándard de comunicación
-                            seguro y eficiente, ahorrando tiempo y dinero.<br> <br>
-                            Somos especialistas en la integración documental descentralizada, logrando que cada organización o empresa, pueda seguir usando 
-                            su propio software y bases de datos, añadiendo un sistema de autentificación documental, en el que es posible controlar la gestión  de versiones
-                            y ciclo de vida de los documentos, así como cualquier tipo de proceso.<br> <br>
-                          </p>
-                          <br>
-                          
-                      </div>
-                  </div>
-                  <div class="timeline" data-aos="fade-right">
-                      <div class="timeline-content">
-                          <h3 class="title center-heading">Paso 3: Tokenización</h3>
-                          <br>
-                          <p class="description">La Tokenización posibilita nuevas formas de <span class="bold">crear valor entre las organizaciones y su entorno</span>, ya que permite registrar, almacenar, e intercambiar, de forma digital y única, 
-                            procesos e información de valor  que son manejados comúnmente en el dia a dia, como pueden ser documentos legales, datos personales o sensibles, entre otros.
-                            <br> <br>
-                            El proceso de tokenización hace que el <span class="bold">intercambio de valor</span> sea <span class="bold">eficiente y seguro</span>, Ya que los tokens funcionan como <span class="bold">contenedores de valor</span>, los cuales solo <span class="bold">son propiedad de aquel que los posee</span> y de 
-                            nadie más. Esto nos permite una <span class="bold">comprobación de origen y propiedad de la información, y adicionalmente es una herramienta eficiente para proceso de toma de decisiones entre particulares de forma segura y transparente.
-                          </p>
-                      </div>
-                  </div>
-                  <div class="timeline mb-5 pb-5" data-aos="fade-left">
-                      <div class="timeline-content">
-                          <h3 class="title center-heading">Paso 4: Inteligencia</h3>
-                          <br>
-                          <p class="description">
-                            La digitalización e interconexión de cualquier proceso para mejeror la interacción con multiples partes y adicción de capas de ejecución automatizadas.<br> <br>
-                            Que permitan la mejora contínua aportando nueva información de manera descentralizada abiertas a su conexión para el intercambio de valor entre participantes, como por ejemplo una cadena de suministros donde la trazabilidad 
-                            de las operaciones está garantizada. 
-                            <br> <br>
-                          </p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>  
-  <!--##########################################################################################-->
-</div>
-
-  <!--Third slide(Contact)-->
-  <div class="centerall full mt-5 pt-5" id="Contact">
-    <div class="container-fluid mt-5 pb-5 Contact">
-    <div class="container col-sm-10 mx-auto mx-2 mb-5 px-3 py-4 bg2-custom">
-      <div class="row justify-content-center mb-0">
-        <div class="mx-auto">
-          <h1 data-aos="zoom-in-up">Contacto</h1>
-        </div>
-      </div>
-      <form id="contact-form" method="post" role="form" enctype="text/plain">
-        <div class="messages"></div>
-        <div class="controls">
-          <div class="row justify-content-center aos-repair">
-            <div class="col-sm-4" data-aos="fade-down-right">
-              <div class="form-group">
-                <label for="form_name" class="bmd-label-floating col-sm-6 label-form">Nombre</label>
-                <input id="form_name" type="text" name="Name" class="form-control form-control-lg" required="required" data-error="Necesitamos saber tu nombre.">
+        <div class="col-sm-12 aos-repair">
+          <div class="main-timeline">
+            <div class="timeline mt-5 pt-5" data-aos="fade-right">
+              <div class="timeline-content">
+                <h4 class="title center-heading">Paso 1: Inmutabilización</h4>
+                <img class="center-img img-fluid" src="src/assets/Guaranteed.svg" alt="Blockchain Guaranteed"
+                  width="250">
+                <p class="description">Vinculación de cualquier tipo de datos con cadenas de bloques públicas, como por
+                  ejemplo Bitcoin.<br> <br>
+                  De esta forma conseguimos un <strong>Sistema de Certificación</strong> que permite
+                  verificar
+                  públicamente datos que se mantienen en el ámbito privado,
+                  pudiendo comprobar la integridad y autenticidad de los mismos de forma segura y transparente,
+                  manteniendo la infraestructura IT actual. </p>
+                <br>
               </div>
             </div>
-            <div class="col-sm-4" data-aos="fade-down-left">
-              <div class="form-group">
-                <label for="form_email" class="bmd-label-floating col-sm-6 label-form">Email</label>
-                <input id="form_email" type="email" name="Email" class="form-control form-control-lg" required="required" data-error="Necesitamos un Email válido">
+            <div class="timeline" data-aos="fade-left">
+              <div class="timeline-content">
+                <h4 class="center-heading title">Paso 2: Integración</h4>
+                <img class="img-fluid center-img" src="src/assets/Puzzle.svg" alt="Puzzle_BCInteration" width="250">
+                <p class="description">Interconexión de distintos sistemas de datos entre si, manteniendo la privacidad
+                  y propiedad de los mismos.<br> <br>
+                  de esta forma es posible intercambiar documentación incluso sin existir confianza entre las partes,
+                  utilizando un estándard de comunicación
+                  seguro y eficiente, ahorrando tiempo y dinero.<br> <br>
+                  Somos especialistas en la integración documental descentralizada, logrando que cada organización o
+                  empresa, pueda seguir usando
+                  su propio software y bases de datos, añadiendo un sistema de autentificación documental, en el que es
+                  posible controlar la gestión de versiones
+                  y ciclo de vida de los documentos, así como cualquier tipo de proceso.<br> <br>
+                </p>
+                <br>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="clearfix"></div>
-
-        <div class="row justify-content-center aos-repair">
-          <div class="col-sm-6 my-3" data-aos="fade-up">
-            <div class="form-group">
-              <label for="form_message" class="bmd-label-floating col-sm-12 label-form">Mensaje</label>
-              <textarea id="form_message" class="form-control form-control-lg" name="Message" required="required" rows="5"  data-error="Escribe tu mensaje."></textarea>
+            <div class="timeline" data-aos="fade-right">
+              <div class="timeline-content">
+                <h4 class="title center-heading">Paso 3: Tokenización</h4>
+                <br>
+                <p class="description">La Tokenización posibilita nuevas formas de <strong>crear valor entre
+                    las organizaciones y su entorno</strong>, ya que permite registrar, almacenar, e intercambiar, de
+                  forma digital y única,
+                  procesos e información de valor que son manejados comúnmente en el dia a dia, como pueden ser
+                  documentos legales, datos personales o sensibles, entre otros.
+                  <br> <br>
+                  El proceso de tokenización hace que el <strong> intercambio de valor </strong> sea <strong>
+                    eficiente y seguro </strong> , Ya que los tokens funcionan como <strong> contenedores de valor </strong> , los cuales solo <strong> son propiedad de aquel
+                    que los posee </strong> y de
+                  nadie más. Esto nos permite una <strong> comprobación de origen y propiedad de la
+                    información </strong> , y adicionalmente es una herramienta eficiente para proceso de toma de decisiones entre
+                    particulares de forma segura y transparente.
+                    <br> <br>
+                </p>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="row justify-content-center aos-repair">
-          <div class="mx-auto button-send" data-aos="flip-down">
-            <input type="submit" class="btn btn-success btn-send disabled bold" tabindex="0" value="Enviar" onclick="sendEmail()">
-          </div>
-        </div>
-      </form>
-    </div>
-  </div>
-  </div>
-  <!--##########################################################################################-->
-</body>
-
-  <!--Footer, it has the section of the navbar "people" in it-->
-  <footer class="full centerall" id="People">
-    <div class="container-fluid aos-repair">
-      <div class="row my-5">
-        <div class="col-md-3 mx-auto my-5 cont-overlay" data-aos="zoom-out-right">
-          <div class="img-shadow cont-overlay">
-            <img src="src/assets/CEO.png" class="photo img-fluid" alt="CEO" width="250">
-          </div>
-          <div class="overlay">
-            <div class="text">Víctor Gil Cifuentes</div>
-          </div>
-        </div>
-        <div class="col-md-3 mx-auto my-5 cont-overlay" data-aos="zoom-out-up">
-          <div class="img-shadow cont-overlay">
-            <img src="src/assets/CLO.png" class="photo img-fluid" alt="CLO" width="250">
-          </div>
-          <div class="overlay">
-            <div class="text">Cruz Guijarro</div>
-          </div>
-        </div>
-        <div class="col-md-3 mx-auto my-5 cont-overlay" data-aos="zoom-in-up">
-          <div class="img-shadow cont-overlay">
-            <img src="src/assets/CPO.png" class="photo img-fluid" alt="CPO" width="250">
-          </div>
-          <div class="overlay">
-            <div class="text">Daniel Nava</div>
-          </div>
-        </div>
-        <div class="col-md-3 mx-auto my-5 cont-overlay" data-aos="zoom-out-left">
-          <div class="img-shadow cont-overlay">
-            <img src="src/assets/COO.png" class="photo img-fluid" alt="COO" width="250">
-          </div>
-          <div class="overlay">
-            <div class="text">Joaquín Rus Pezzi</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer container-fluid">
-      <div id="button">
-        <img src="src/assets/Icon.png" width="75em" alt="icon">
-      </div>
-      <div id="container">
-        <div id="cont">
-          <div class="footer_center">
-            <a data-target="#Legal" data-toggle="modal"> <h3>Aviso-Legal</h3> </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!--##########################################################################################-->
-    <!--Modal Aviso legal-->
-    <div class="modal fade" id="Legal" tabindex="-1" role="dialog" aria-labelledby="Legal" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 class="modal-title" id="Legal_Title">Aviso-Legal (<a href="mailto:legal@dteil.org">legal@dteil.org</a>):</h2>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <h4>Identificación y Titularidad</h4>
-            <br>
-            <p>En cumplimiento del artículo 10 de la Ley 34 / 2002, 
-              de 11 de julio, de Servicios de la Sociedad de la Información y Comercio Electrónico, 
-              el Titular expone sus datos identificativos.
-            </p>
-            <ul>
-              <li> <h6>Correo electrónico:</h6> <a href="mailto:legal@dteil.org">legal@dteil.org</a> </li>
-              <li> <h6>Sitio Web:</h6> <a href="https://www.dteil.org">https://www.dteil.org</a></li>
-            </ul>
-            <br>
-            <h4>Finalidad</h4>
-            <p>La finalidad del sitio Web <a href="https://dteil.org">https://dteil.org</a> es informar.</p>
-            <h4>Condiciones de Uso</h4>
-            <br>
-            <p>La utilización del sitio Web le otorga la condición de Usuario, e implica la aceptación 
-              completa de todas las cláusulas y condiciones de uso incluidas en las páginas:
-            </p>
-            <ul>
-              <li>Aviso Legal</li>
-              <li>Política de Privacidad</li>
-              <li>Política de Cookies</li>
-            </ul>
-            <p>
-              Si no estuviera conforme con todas y cada una de estas cláusulas y condiciones absténgase 
-              de utilizar este sitio Web.
-              <br>
-              El acceso a este sitio Web no supone, en modo alguno, el inicio de una relación 
-              comercial con el Titular.
-              <br>
-              A través de este sitio Web, el Titular le facilita el acceso y la utilización de 
-              diversos contenidos que el Titular o sus colaboradores han publicadon por medio de Internet.
-              <br>
-              A tal efecto, usted está obligado y comprometido a NO utilizar cualquiera 
-              de los contenidos del sitio Web con fines o efectos ilícitos, prohibidos en este Aviso 
-              Legal o por la legislación vigente, lesivos de los derechos e intereses de terceros, 
-              o que de cualquier forma puedan dañar, inutilizar, sobrecargar, deteriorar o impedir la 
-              normal utilización de los contenidos, los equipos informáticos o los documentos, archivos y 
-              toda clase de contenidos almacenados en cualquier equipo informático propios o contratados 
-              por el Titular, de otros usuarios o de cualquier usuario de Internet.
-            </p>
-            <br>
-            <h4>Medidas de seguridad</h4>
-            <br>
-            <p>
-              Los datos personales que facilite al Titular pueden ser almacenados en bases 
-              de datos automatizadas o no, cuya titularidad corresponde en exclusiva a el Titular, 
-              que asume todas las medidas de índole técnica, organizativa y de seguridad que garantizan 
-              la confidencialidad, integridad y calidad de la información contenida en las mismas de 
-              acuerdo con lo establecido en la normativa vigente en protección de datos.
-              <br>
-              No obstante, debe ser consciente de que las medidas de seguridad de los sistemas 
-              informáticos en Internet no son enteramente fiables y que, por tanto el Titular no 
-              puede garantizar la inexistencia de virus u otros elementos que puedan producir alteraciones 
-              en los sistemas informáticos (software y hardware) del Usuario o en sus documentos electrónicos 
-              y ficheros contenidos en los mismos aunque el Titular pone todos los medios necesarios y toma las 
-              medidas de seguridad oportunas para evitar la presencia de estos elementos dañinos.
-            </p>
-              <br>
-              <h4>Datos personales</h4>
-              <br>
-              <p>
-                Usted puede consultar toda la información relativa al tratamiento de datos personales 
-                que recoge el Titular en la página de la Política de Privacidad.
-              </p>
-              <br>
-              <h4>Contenidos</h4>
-              <br>
-              <p>
-                El Titular ha obtenido la información, el contenido multimedia y 
-                los materiales incluidos en el sitio Web de fuentes que considera 
-                fiables, pero, si bien ha tomado todas las medidas razonables para asegurar que la información 
-                contenida es correcta, el Titular no garantiza que sea exacta, completa o actualizada. El Titular declina 
-                expresamente cualquier responsabilidad por error u omisión en la información contenida en las páginas de este 
-                sitio Web.
+            <div class="timeline mb-5 pb-5" data-aos="fade-left">
+              <div class="timeline-content">
+                <h4 class="title center-heading">Paso 4: Inteligencia</h4>
                 <br>
-                Queda prohibido transmitir o enviar a través del sitio Web cualquier contenido ilegal o ilícito, 
-                virus informáticos, o mensajes que, en general, afecten o violen derechos de el Titular o de terceros.
-                <br>
-                Los contenidos del Sitio Web tienen únicamente una finalidad informativa y bajo ninguna circunstancia deben 
-                usarse ni considerarse como oferta de venta, solicitud de una oferta de compra ni recomendación para realizar 
-                cualquier otra operación, salvo que así se indique expresamente.
-                <br>
-                El Titular se reserva el derecho a modificar, suspender, cancelar o restringir el contenido del Sitio Web, 
-                los vínculos o la información obtenida a través del sitio Web, sin necesidad de previo aviso.
-                <br>
-                El Titular no es responsable de los daños y perjuicios que pudieran derivarse de la utilización 
-                de la información del sitio Web o de la contenida en las redes sociales del Titular.
-              </p>
-              <br>
-              <h4>Política de cookies</h4>
-              <br>
-              <p>
-                En la página Política de Cookies puede consultar toda la información relativa a la política de recogida y 
-                tratamiento de las cookies.
-                <br>
-                El Titular sólo obtiene y conserva la siguiente información acerca de los visitantes del Sitio Web:
-                <ul>
-                  <li>El nombre de dominio del proveedor (PSI) y/o dirección IP que les da acceso a la red.</li>
-                  <li>La fecha y hora de acceso al sitio Web.</li>
-                  <li>La dirección de Internet origen del enlace que dirige al sitio Web.</li>
-                  <li>El número de visitantes diarios de cada sección.</li>
-                  <li>La información obtenida es totalmente anónima, y en ningún caso puede ser asociada a un Usuario concreto e identificado.</li>
-                </ul>
-              </p>
-              <br>
-              <h4>Enlaces de interés a otros sitios Web</h4>
-              <br>
-              <p>
-                El Titular puede proporcionarle acceso a sitios Web de terceros mediante enlaces con la finalidad de informar sobre la existencia de otras 
-                fuentes de información en Internet en las que podrá ampliar los datos ofrecidos en el sitio Web.
-                <br>
-                Estos enlaces a otros sitios Web no suponen en ningún caso una sugerencia o recomendación para que usted visite las páginas web de destino, 
-                que están fuera del control del Titular, por lo que Titular no es responsable del contenido de los sitios web vinculados ni del resultado que 
-                obtenga al seguir los enlaces.
-                <br>
-                Asimismo, el Titular no responde de los links o enlaces ubicados en los sitios web vinculados a los que le proporciona acceso.
-                <br>
-                El establecimiento del enlace no implica en ningún caso la existencia de relaciones entre Titular y el propietario del sitio en el que se establezca 
-                el enlace, ni la aceptación o aprobación por parte del Titular de sus contenidos o servicios.
-                <br>
-                Si accede a un sitio Web externo desde un enlace que encuentre en el Sitio Web usted deberá leer la propia política de privacidad del otro sitio web 
-                que puede ser diferente de la de este sitio Web.
-              </p>
-              <br>
-              <h4>Propiedad intelectual e industrial</h4>
-              <br>
-              <p>
-                Todos los derechos están reservados.
-                <br>
-                Todo acceso a este sitio Web está sujeto a las siguientes condiciones: la reproducción, almacenaje permanente y la difusión de los contenidos 
-                o cualquier otro uso que tenga finalidad pública o comercial queda expresamente prohibida sin el consentimiento previo expreso y por escrito de Titular.
-              </p>
-              <br>
-              <h4>Limitación de responsabilidad</h4>
-              <br>
-              <p>
-                La información y servicios incluidos o disponibles a través de este sitio Web pueden incluir incorrecciones o errores tipográficos. De 
-                forma periódica el Titular incorpora mejoras y/o cambios a la información contenida y/o los Servicios que puede introducir en cualquier 
-                momento.
-                <br>
-                El Titular no declara ni garantiza que los servicios o contenidos sean interrumpidos o que estén libres de errores, que los defectos sean 
-                corregidos, o que el servicio o el servidor que lo pone a disposición estén libres de virus u otros componentes nocivos sin perjuicio de que el Titular 
-                realiza todos los esfuerzos en evitar este tipo de incidentes.
-                <br>
-                Titular declina cualquier responsabilidad en caso de que existan interrupciones o un mal funcionamiento de los Servicios o contenidos ofrecidos en Internet, 
-                cualquiera que sea su causa. Asimismo, el Titular no se hace responsable por caídas de la red, pérdidas de negocio a consecuencia de 
-                dichas caídas, suspensiones temporales de fluido eléctrico o cualquier otro tipo de daño indirecto que te pueda ser causado por causas 
-                ajenas a el Titular.
-                <br>
-                Antes de tomar decisiones y/o acciones con base a la información incluida en el sitio Web, el Titular le recomienda comprobar y contrastar 
-                la información recibida con otras fuentes.
-              </p>
-              <br>
-              <h4>Jurisdicción</h4>
-              <br>
-              <p>
-                Este Aviso Legal se rige íntegramente por la legislación española.
-                <br>
-                Siempre que no haya una norma que obligue a otra cosa, para cuantas cuestiones se susciten sobre la interpretación, 
-                aplicación y cumplimiento de este Aviso Legal, así como de las reclamaciones que puedan derivarse de su uso, las partes acuerdan 
-                someterse a los Jueces y Tribunales de la provincia de Sevilla, con renuncia expresa de cualquier otra jurisdicción que pudiera 
-                corresponderles.
-              </p>
-              <h4>Contacto</h4>
-              <br>
-              En caso de que usted tenga cualquier duda acerca de estas Condiciones legales o quiera realizar cualquier comentario sobre este sitio Web, 
-              puede enviar un mensaje de correo electrónico a la dirección <a href="mailto:legal@dteil.org">legal@dteil.org</a> .
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <p class="description">
+                  La digitalización e interconexión de cualquier proceso para mejeror la interacción con multiples
+                  partes y adicción de capas de ejecución automatizadas.<br> <br>
+                  Que permitan la mejora contínua aportando nueva información de manera descentralizada abiertas a su
+                  conexión para el intercambio de valor entre participantes, como por ejemplo una cadena de suministros
+                  donde la trazabilidad
+                  de las operaciones está garantizada.
+                  <br> <br>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <!--##########################################################################################-->
+  </div>
 
-    <!-- Aos first (Animation when scrolling), then jQuery (material design bootstrap), then Popper.js (material design bootstrap), then Bootstrap JS (material design bootstrap) -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
-    <script>
-      $(document).ready(function() {
-        $('body').bootstrapMaterialDesign();
-      });
-    </script>
-    <script>
-      var navbar = document.getElementById('nbvr');
-      var logo = document.getElementById('logo')
-      window.onscroll = function() {
-        if (window.pageYOffset > 1) {
-          navbar.style.background = "white";
-          logo.style.width = "100px";
-        }
-        else {
-          navbar.style.background = "transparent";
-          logo.style.width = "180px";
-        }
+  <!--Third slide(Contact)-->
+  <div class="full" id="Contact">
+    <div class="container-fluid Contact">
+      <div class="container col-md-10 mb-5 mx-auto mt-0 mx-2 px-3 py-4 bg2-custom">
+        <div id="ContactChange"></div>
+        <div class="row justify-content-center mb-0">
+          <div class="mx-auto">
+            <h1 data-aos="zoom-in-up">Contacto</h1>
+          </div>
+        </div>
+        <form id="contact-form" method="post" role="form" enctype="text/plain">
+          <div class="messages"></div>
+          <div class="controls">
+            <div class="row justify-content-center aos-repair">
+              <div class="col-sm-4" data-aos="fade-down-right">
+                <div id="form-name-div" class="form-group">
+                  <label for="form-name" class="bmd-label-floating col-sm-6 label-form">Nombre</label>
+                  <input id="form-name" type="text" name="Name" class="form-control form-control-lg" required="required"
+                    data-error="Necesitamos saber tu nombre.">
+                </div>
+              </div>
+              <div class="col-sm-4" data-aos="fade-down-left">
+                <div id="form-email-div" class="form-group">
+                  <label for="form-email" class="bmd-label-floating col-sm-6 label-form">Email</label>
+                  <input id="form-email" type="email" name="Email" class="form-control form-control-lg"
+                    required="required" data-error="Necesitamos un Email válido">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+
+          <div class="row justify-content-center aos-repair">
+            <div class="col-sm-6 my-3" data-aos="fade-up">
+              <div id="form-message-div" class="form-group">
+                <label for="form-message" class="bmd-label-floating col-sm-12 label-form">Mensaje</label>
+                <textarea id="form-message" class="form-control form-control-lg" name="Message" required="required"
+                  rows="5" data-error="Escribe tu mensaje."></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center aos-repair">
+            <div id="SendButtonDiv" class="mx-auto button-send" data-aos="flip-down">
+              <input id="SendButton" type="submit" class="btn btn-primary disabled" tabindex="0" value="Enviar">
+            </div>
+          </div>
+        </form>
+      </div>
+      </div>
+    </div>
+  </div>
+  <!--##########################################################################################-->
+</body>
+
+<!--Footer, it has the section of the navbar "people" in it-->
+<footer class="full centerall" id="People">
+  <div class="container-fluid aos-repair">
+    <div class="row my-5">
+      <div class="col-md-3 mx-auto my-5 cont-overlay" data-aos="zoom-out-right">
+        <div class="img-shadow cont-overlay">
+          <img src="src/assets/CEO.png" class="photo img-fluid" alt="CEO" width="250">
+        </div>
+        <div class="overlay">
+          <div class="text">Víctor Gil Cifuentes</div>
+        </div>
+      </div>
+      <div class="col-md-3 mx-auto my-5 cont-overlay" data-aos="zoom-out-up">
+        <div class="img-shadow cont-overlay">
+          <img src="src/assets/CLO.png" class="photo img-fluid" alt="CLO" width="250">
+        </div>
+        <div class="overlay">
+          <div class="text">Cruz Guijarro</div>
+        </div>
+      </div>
+      <div class="col-md-3 mx-auto my-5 cont-overlay" data-aos="zoom-in-up">
+        <div class="img-shadow cont-overlay">
+          <img src="src/assets/CPO.png" class="photo img-fluid" alt="CPO" width="250">
+        </div>
+        <div class="overlay">
+          <div class="text">Daniel Nava</div>
+        </div>
+      </div>
+      <div class="col-md-3 mx-auto my-5 cont-overlay" data-aos="zoom-out-left">
+        <div class="img-shadow cont-overlay">
+          <img src="src/assets/COO.png" class="photo img-fluid" alt="COO" width="250">
+        </div>
+        <div class="overlay">
+          <div class="text">Joaquín Rus Pezzi</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer container-fluid">
+    <div id="button">
+      <img src="src/assets/Icon.png" width="75em" alt="icon">
+    </div>
+    <div id="container">
+      <div id="cont">
+        <div class="footer_center">
+          <a data-target="#Legal" data-toggle="modal">
+            <h3>Aviso-Legal</h3>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--##########################################################################################-->
+
+<!--Modal Aviso legal-->
+<div class="modal fade" id="Legal" tabindex="-1" role="dialog" aria-labelledby="Legal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="Legal_Title">Aviso-Legal (<a href="mailto:legal@dteil.org">legal@dteil.org</a>):
+        </h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h4>Identificación y Titularidad</h4>
+        <p>En cumplimiento del artículo 10 de la Ley 34 / 2002,
+          de 11 de julio, de Servicios de la Sociedad de la Información y Comercio Electrónico,
+          el Titular expone sus datos identificativos.
+        </p>
+        <ul>
+          <li>
+            <h6>Correo electrónico:</h6> <a href="mailto:legal@dteil.org">legal@dteil.org</a>
+          </li>
+          <li>
+            <h6>Sitio Web:</h6> <a href="https://www.dteil.org">https://www.dteil.org</a>
+          </li>
+        </ul>
+        <hr>
+        <h4>Finalidad</h4>
+        <p>La finalidad del sitio Web <a href="https://dteil.org">https://dteil.org</a> es informar.</p>
+        <hr>
+        <h4>Condiciones de Uso</h4>
+        <p>La utilización del sitio Web le otorga la condición de Usuario, e implica la aceptación
+          completa de todas las cláusulas y condiciones de uso incluidas en las páginas:
+        </p>
+        <ul>
+          <li>Aviso Legal</li>
+          <li>Política de Privacidad</li>
+          <li>Política de Cookies</li>
+        </ul>
+        <p>
+          Si no estuviera conforme con todas y cada una de estas cláusulas y condiciones absténgase
+          de utilizar este sitio Web.
+          <br> <br>
+          El acceso a este sitio Web no supone, en modo alguno, el inicio de una relación
+          comercial con el Titular.
+          <br> <br>
+          A través de este sitio Web, el Titular le facilita el acceso y la utilización de
+          diversos contenidos que el Titular o sus colaboradores han publicadon por medio de Internet.
+          <br> <br>
+          A tal efecto, usted está obligado y comprometido a NO utilizar cualquiera
+          de los contenidos del sitio Web con fines o efectos ilícitos, prohibidos en este Aviso
+          Legal o por la legislación vigente, lesivos de los derechos e intereses de terceros,
+          o que de cualquier forma puedan dañar, inutilizar, sobrecargar, deteriorar o impedir la
+          normal utilización de los contenidos, los equipos informáticos o los documentos, archivos y
+          toda clase de contenidos almacenados en cualquier equipo informático propios o contratados
+          por el Titular, de otros usuarios o de cualquier usuario de Internet.
+        </p>
+        <hr>
+        <h4>Medidas de seguridad</h4>
+        <p>
+          Los datos personales que facilite al Titular pueden ser almacenados en bases
+          de datos automatizadas o no, cuya titularidad corresponde en exclusiva a el Titular,
+          que asume todas las medidas de índole técnica, organizativa y de seguridad que garantizan
+          la confidencialidad, integridad y calidad de la información contenida en las mismas de
+          acuerdo con lo establecido en la normativa vigente en protección de datos.
+          <br> <br>
+          No obstante, debe ser consciente de que las medidas de seguridad de los sistemas
+          informáticos en Internet no son enteramente fiables y que, por tanto el Titular no
+          puede garantizar la inexistencia de virus u otros elementos que puedan producir alteraciones
+          en los sistemas informáticos (software y hardware) del Usuario o en sus documentos electrónicos
+          y ficheros contenidos en los mismos aunque el Titular pone todos los medios necesarios y toma las
+          medidas de seguridad oportunas para evitar la presencia de estos elementos dañinos.
+        </p>
+        <hr>
+        <h4>Datos personales</h4>
+        <p>
+          Usted puede consultar toda la información relativa al tratamiento de datos personales
+          que recoge el Titular en la página de la Política de Privacidad.
+        </p>
+        <hr>
+        <h4>Contenidos</h4>
+        <p>
+          El Titular ha obtenido la información, el contenido multimedia y
+          los materiales incluidos en el sitio Web de fuentes que considera
+          fiables, pero, si bien ha tomado todas las medidas razonables para asegurar que la información
+          contenida es correcta, el Titular no garantiza que sea exacta, completa o actualizada. El Titular declina
+          expresamente cualquier responsabilidad por error u omisión en la información contenida en las páginas de este
+          sitio Web.
+          <br> <br>
+          Queda prohibido transmitir o enviar a través del sitio Web cualquier contenido ilegal o ilícito,
+          virus informáticos, o mensajes que, en general, afecten o violen derechos de el Titular o de terceros.
+          <br> <br>
+          Los contenidos del Sitio Web tienen únicamente una finalidad informativa y bajo ninguna circunstancia deben
+          usarse ni considerarse como oferta de venta, solicitud de una oferta de compra ni recomendación para realizar
+          cualquier otra operación, salvo que así se indique expresamente.
+          <br> <br>
+          El Titular se reserva el derecho a modificar, suspender, cancelar o restringir el contenido del Sitio Web,
+          los vínculos o la información obtenida a través del sitio Web, sin necesidad de previo aviso.
+          <br> <br>
+          El Titular no es responsable de los daños y perjuicios que pudieran derivarse de la utilización
+          de la información del sitio Web o de la contenida en las redes sociales del Titular.
+        </p>
+        <hr>
+        <h4>Política de cookies</h4>
+        <p>
+          En la página Política de Cookies puede consultar toda la información relativa a la política de recogida y
+          tratamiento de las cookies.
+          <br> <br>
+          El Titular sólo obtiene y conserva la siguiente información acerca de los visitantes del Sitio Web:
+          <ul>
+            <li>El nombre de dominio del proveedor (PSI) y/o dirección IP que les da acceso a la red.</li>
+            <li>La fecha y hora de acceso al sitio Web.</li>
+            <li>La dirección de Internet origen del enlace que dirige al sitio Web.</li>
+            <li>El número de visitantes diarios de cada sección.</li>
+            <li>La información obtenida es totalmente anónima, y en ningún caso puede ser asociada a un Usuario concreto
+              e identificado.</li>
+          </ul>
+        </p>
+        <hr>
+        <h4>Enlaces de interés a otros sitios Web</h4>
+        <p>
+          El Titular puede proporcionarle acceso a sitios Web de terceros mediante enlaces con la finalidad de informar
+          sobre la existencia de otras
+          fuentes de información en Internet en las que podrá ampliar los datos ofrecidos en el sitio Web.
+          <br> <br>
+          Estos enlaces a otros sitios Web no suponen en ningún caso una sugerencia o recomendación para que usted
+          visite las páginas web de destino,
+          que están fuera del control del Titular, por lo que Titular no es responsable del contenido de los sitios web
+          vinculados ni del resultado que
+          obtenga al seguir los enlaces.
+          <br> <br>
+          Asimismo, el Titular no responde de los links o enlaces ubicados en los sitios web vinculados a los que le
+          proporciona acceso.
+          <br> <br>
+          El establecimiento del enlace no implica en ningún caso la existencia de relaciones entre Titular y el
+          propietario del sitio en el que se establezca
+          el enlace, ni la aceptación o aprobación por parte del Titular de sus contenidos o servicios.
+          <br> <br>
+          Si accede a un sitio Web externo desde un enlace que encuentre en el Sitio Web usted deberá leer la propia
+          política de privacidad del otro sitio web
+          que puede ser diferente de la de este sitio Web.
+        </p>
+        <hr>
+        <h4>Propiedad intelectual e industrial</h4>
+        <p>
+          Todos los derechos están reservados.
+          <br> <br>
+          Todo acceso a este sitio Web está sujeto a las siguientes condiciones: la reproducción, almacenaje permanente
+          y la difusión de los contenidos
+          o cualquier otro uso que tenga finalidad pública o comercial queda expresamente prohibida sin el
+          consentimiento previo expreso y por escrito de Titular.
+        </p>
+        <hr>
+        <h4>Limitación de responsabilidad</h4>
+        <p>
+          La información y servicios incluidos o disponibles a través de este sitio Web pueden incluir incorrecciones o
+          errores tipográficos. De
+          forma periódica el Titular incorpora mejoras y/o cambios a la información contenida y/o los Servicios que
+          puede introducir en cualquier
+          momento.
+          <br> <br>
+          El Titular no declara ni garantiza que los servicios o contenidos sean interrumpidos o que estén libres de
+          errores, que los defectos sean
+          corregidos, o que el servicio o el servidor que lo pone a disposición estén libres de virus u otros
+          componentes nocivos sin perjuicio de que el Titular
+          realiza todos los esfuerzos en evitar este tipo de incidentes.
+          <br> <br>
+          Titular declina cualquier responsabilidad en caso de que existan interrupciones o un mal funcionamiento de los
+          Servicios o contenidos ofrecidos en Internet,
+          cualquiera que sea su causa. Asimismo, el Titular no se hace responsable por caídas de la red, pérdidas de
+          negocio a consecuencia de
+          dichas caídas, suspensiones temporales de fluido eléctrico o cualquier otro tipo de daño indirecto que te
+          pueda ser causado por causas
+          ajenas a el Titular.
+          <br> <br>
+          Antes de tomar decisiones y/o acciones con base a la información incluida en el sitio Web, el Titular le
+          recomienda comprobar y contrastar
+          la información recibida con otras fuentes.
+        </p>
+        <hr>
+        <h4>Jurisdicción</h4>
+        <p>
+          Este Aviso Legal se rige íntegramente por la legislación española.
+          <br> <br>
+          Siempre que no haya una norma que obligue a otra cosa, para cuantas cuestiones se susciten sobre la
+          interpretación,
+          aplicación y cumplimiento de este Aviso Legal, así como de las reclamaciones que puedan derivarse de su uso,
+          las partes acuerdan
+          someterse a los Jueces y Tribunales de la provincia de Sevilla, con renuncia expresa de cualquier otra
+          jurisdicción que pudiera
+          corresponderles.
+        </p>
+        <hr>
+        <h4>Contacto</h4>
+        En caso de que usted tenga cualquier duda acerca de estas Condiciones legales o quiera realizar cualquier
+        comentario sobre este sitio Web,
+        puede enviar un mensaje de correo electrónico a la dirección <a
+          href="mailto:legal@dteil.org">legal@dteil.org</a> .
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--##########################################################################################-->
+
+<!-- Aos first (Animation when scrolling), then jQuery (material design bootstrap), then Popper.js (material design bootstrap), then Bootstrap JS (material design bootstrap) -->
+<script src="https://smtpjs.com/smtp.js"></script>
+<script src="src/Contact.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
+  integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
+  integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+<script>
+  $(document).ready(function () {
+    $('body').bootstrapMaterialDesign();
+  });
+  $('.popover-dismiss').popover({
+    trigger: 'focus'
+  })
+  $(function () {
+    $('[data-toggle="popover"]').popover()
+  })
+
+  $(function() {
+  $(document).click(function (event) {
+    $('.navbar-collapse').collapse('hide');
+  });
+});
+</script>
+<script>
+  var navbar = document.getElementById('nbvr');
+  var logo = document.getElementById('logo');
+  var navlinks = document.getElementById("navbarLinks").querySelectorAll(".nav-item-text");
+  window.onscroll = function () {
+    if (window.pageYOffset > 1) {
+      navbar.style.background = "white";
+      logo.style.width = "6.5em";
+      var i;
+      for (i = 0; i < navlinks.length; i++) {
+      navlinks[i].style.fontSize = "large";
       }
-    </script>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script>
-      particlesJS(
-        "particles-js", { 
-          "particles":{
-            "number":{
-              "value":25,
-              "density":{
-                "enable":true,
-                "value_area":800
-              }
-            },
-            "color":{
-              "value":"#000000"
-            },
-            "shape":{
-              "type":"polygon",
-              "stroke":{
-                "width":0,
-                "color":"#000000"
-              },
-              "polygon":{
-                "nb_sides":8
-              }
-            },
-            "opacity":{
-              "value":0.5,
-              "random":false,
-              "anim":{
-                "enable":false,
-                "speed":1,
-                "opacity_min":0.1,
-                "sync":false
-              }
-            },
-            "size":{
-              "value":3,
-              "random":false,
-              "anim":{
-                "enable":false,
-                "speed":40,
-                "size_min":0.1,
-                "sync":false
-              }
-            },
-            "line_linked":{
-              "enable":true,
-              "distance":300,
-              "color":"#000000",
-              "opacity":0.4,
-              "width":1
-            },
-            "move":{
-              "enable":true,
-              "speed":6,
-              "direction":"none",
-              "random":false,
-              "straight":false,
-              "out_mode":"out",
-              "bounce":false,
-              "attract":{
-                "enable":false,
-                "rotateX":600,
-                "rotateY":1200
-              }
-            }
+    } else {
+      navbar.style.background = "transparent";
+      logo.style.width = "10em";
+      var i;
+      for (i = 0; i < navlinks.length; i++) {
+      navlinks[i].style.fontSize = "x-large";
+      }
+    }
+  }
+</script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script>
+  particlesJS(
+    "particles-js", {
+      "particles": {
+        "number": {
+          "value": 25,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": {
+          "value": "#000000"
+        },
+        "shape": {
+          "type": "polygon",
+          "stroke": {
+            "width": 0,
+            "color": "#000000"
           },
-          "interactivity":{
-            "detect_on":"canvas",
-            "events":{
-              "onhover":{
-                "enable":true,
-                "mode":"grab"
-              },
-              "onclick":{
-                "enable":false,
-                "mode":"bubble"
-              },
-              "resize":true
-            },
-            "modes":{
-              "grab":{
-                "distance":200,
-                "line_linked":{
-                  "opacity":1
-                }
-              },
-              "bubble":{
-                "distance":200,
-                "size":10,
-                "duration":1,
-                "opacity":8,
-                "speed":3
-              },
-              "repulse":{
-                "distance":200,
-                "duration":0.4
-              },
-              "push":{
-                "particles_nb":4
-              },
-              "remove":{
-                "particles_nb":4
-              }
-            }
-          },
-          "retina_detect":true
+          "polygon": {
+            "nb_sides": 8
+          }
+        },
+        "opacity": {
+          "value": 0.5,
+          "random": false,
+          "anim": {
+            "enable": false,
+            "speed": 1,
+            "opacity_min": 0.1,
+            "sync": false
+          }
+        },
+        "size": {
+          "value": 3,
+          "random": false,
+          "anim": {
+            "enable": false,
+            "speed": 40,
+            "size_min": 0.1,
+            "sync": false
+          }
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 300,
+          "color": "#000000",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 6,
+          "direction": "none",
+          "random": false,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": false,
+          "attract": {
+            "enable": false,
+            "rotateX": 600,
+            "rotateY": 1200
+          }
         }
-      );
-    </script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="src/Contact.js"></script>
-</html>
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": true,
+            "mode": "grab"
+          },
+          "onclick": {
+            "enable": false,
+            "mode": "bubble"
+          },
+          "resize": true
+        },
+        "modes": {
+          "grab": {
+            "distance": 200,
+            "line_linked": {
+              "opacity": 1
+            }
+          },
+          "bubble": {
+            "distance": 200,
+            "size": 10,
+            "duration": 1,
+            "opacity": 8,
+            "speed": 3
+          },
+          "repulse": {
+            "distance": 200,
+            "duration": 0.4
+          },
+          "push": {
+            "particles_nb": 4
+          },
+          "remove": {
+            "particles_nb": 4
+          }
+        }
+      },
+      "retina_detect": true
+    }
+  );
+</script>
 
+</html>
