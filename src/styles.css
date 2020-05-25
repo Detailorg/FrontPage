@@ -5,8 +5,6 @@ html {
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Montserrat:ital,wght@0,500;1,300&display=swap');
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: lighter;
   margin: 0;
   height: 100%;
   background-color: white;
@@ -29,11 +27,12 @@ strong {
   font-weight: 500;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
+p, small {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5 {
   font-family: 'Jost', sans-serif;
   font-weight: 300;
 }
@@ -61,6 +60,7 @@ h5 {
 }
 
 .nav-item-text {
+  font-family: 'Jost', sans-serif;
   font-weight: 300;
   font-size: x-large;
   transition: 1s;
@@ -160,8 +160,6 @@ h5 {
 }
 
 .space {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
   letter-spacing: 1px;
   line-height: 1.4em;
 }
@@ -218,6 +216,8 @@ h5 {
 }
 
 .button-send {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
   border-style: solid;
   border-top: 0;
   border-left: 0;
@@ -230,11 +230,14 @@ h5 {
   border-top: 0;
   border-left: 0;
   border-radius: 20px;
-  color: rgb(100, 100, 100);
+  color: #B5B5B5;
 }
 
 .disabled {
-  color: rgb(100, 100, 100) !important;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: small;
+  color: #B5B5B5 !important;
 }
 
 .btn-primary:hover {
@@ -242,7 +245,8 @@ h5 {
 }
 
 .label-form {
-  color: rgb(100, 100, 100);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
 }
 
 .Home {
