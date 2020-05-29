@@ -424,6 +424,9 @@ h1, h2, h3, h4, h5 {
 .footer #button {
   margin: 0 auto;
   position: relative;
+  animation: pulsate 1.5s ease-in-out 0s infinite both;
+  margin-top: 1em;
+  padding-bottom: 1em;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;
@@ -438,6 +441,11 @@ h1, h2, h3, h4, h5 {
   -ms-transition: all 1s ease;
   transition: all 1s ease;
   position: relative;
+  animation-play-state: paused;
+}
+
+.footer:hover #button {
+  animation-play-state: paused;
 }
 
 .footer {
@@ -445,7 +453,7 @@ h1, h2, h3, h4, h5 {
   left: 0;
   position: absolute;
   width: 100%;
-  height: 2em;
+  height: 3em;
   overflow: hidden;
   margin: 0 auto;
   -webkit-transition: all 1s ease;
@@ -462,7 +470,7 @@ h1, h2, h3, h4, h5 {
   -o-transition: all 1s ease;
   -ms-transition: all 1s ease;
   transition: all 1s ease;
-  height: 10em;
+  height: 12em;
 }
 
 .footer #container {
@@ -634,6 +642,21 @@ h1, h2, h3, h4, h5 {
 
   to {
     opacity: 1;
+  }
+}
+
+@keyframes pulsate {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
