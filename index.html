@@ -16,6 +16,11 @@
   <link rel="stylesheet" href="src/styles.css">
 </head>
 
+<!--Loader (first div to show up)-->
+<div id="loader">
+    <img class="spinner" src="src/assets/logo.png" width="100%" alt="logo">
+</div>
+
 <!--Particles-js-->
 <div id="particles-js"></div>
 
@@ -104,12 +109,6 @@
   </div>
   <!--##########################################################################################-->
 
-  <!--Image fades out-->
-  <div class="full first centerall">
-    <img src="src/assets/logo.png" width="100%" alt="logo">
-  </div>
-  <!--##########################################################################################-->
-
   <!--First slide (Home)-->
   <main class="full" id="Home">
     <div class="full Home" style="pointer-events: none;">
@@ -157,7 +156,7 @@
 
   <!--Second slide(Steps)-->
 
-  <div class="centerall" id="Steps">
+  <section class="centerall" id="Steps">
     <div class="container">
       <div class="row">
         <div class="col-sm-12 aos-repair">
@@ -237,10 +236,10 @@
       </div>
     </div>
     <!--##########################################################################################-->
-  </div>
+  </section>
 
   <!--Third slide(Contact)-->
-  <div class="full" id="Contact">
+  <section class="full" id="Contact">
     <div class="container-fluid Contact">
       <div class="container col-md-10 mb-5 mx-auto mt-0 mx-2 px-3 py-4 bg2-custom">
         <div id="ContactChange"></div>
@@ -289,7 +288,7 @@
       </div>
       </div>
     </div>
-  </div>
+  </section>
   <!--##########################################################################################-->
 </body>
 
@@ -567,6 +566,14 @@
   integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
   integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+
+<script>
+var loader = document.getElementById("loader");
+window.addEventListener('load', function(){
+  loader.style.display = 'none';
+})
+</script>
+
 <script>
   $(document).ready(function () {
     $('body').bootstrapMaterialDesign();

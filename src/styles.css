@@ -7,7 +7,7 @@ html {
 body {
   margin: 0;
   height: 100%;
-  background-color: white;
+  background-color: white !important;
   position: relative;
   overflow-x: hidden;
 }
@@ -35,6 +35,16 @@ p, small {
 h1, h2, h3, h4, h5 {
   font-family: 'Jost', sans-serif;
   font-weight: 300;
+}
+
+.spinner {
+  width: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  animation: loading 2s infinite linear;
+  transition: ease-out 1s;
 }
 
 .aos-repair {
@@ -168,15 +178,6 @@ h1, h2, h3, h4, h5 {
   border-radius: 10px;
   border-style: hidden;
   background-color: rgba(255, 255, 255, 0.8);
-}
-
-.first {
-  animation-name: fade-out;
-  animation-duration: 2s;
-  transition-timing-function: 2s ease-in;
-  animation-fill-mode: forwards;
-  position: absolute;
-  z-index: 12;
 }
 
 .Cookies {
@@ -362,7 +363,10 @@ h1, h2, h3, h4, h5 {
 .main-timeline .timeline-content {
   color: black;
   min-height: 50vh;
-  background-image: linear-gradient(#99D5B3, #d2f9e0);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(230, 230, 230);
+  background-color: white;
   text-align: right;
   padding: 30px 40px 30px 40px;
   margin: 0 auto;
@@ -400,17 +404,14 @@ h1, h2, h3, h4, h5 {
 }
 
 .main-timeline .timeline:nth-child(4n+2) .timeline-content {
-  background-image: linear-gradient(#99DAF4, #d2edf9);
   text-align: left;
 }
 
 .main-timeline .timeline:nth-child(4n+3) .timeline-content {
-  background-image: linear-gradient(#F59BA1, #fdced1);
   text-align: right;
 }
 
 .main-timeline .timeline:nth-child(4n+4) .timeline-content {
-  background-image: linear-gradient(#FEF79F, #fdface);
   text-align: left;
 }
 
@@ -567,6 +568,17 @@ h1, h2, h3, h4, h5 {
   transform: rotatex(0deg);
 }
 
+#loader {
+  transition: ease-out 1s;
+  height:100%;
+  width:100%;
+  background: white;
+  position:fixed;
+  left:0;
+  top:0;
+  z-index: 100;
+}
+
 #nbvr {
   transition: 1s;
 }
@@ -621,17 +633,14 @@ h1, h2, h3, h4, h5 {
   z-index: 1;
 }
 
-@keyframes fade-out {
-  0% {
+@keyframes loading{
+  0%, 100%{
+    transform: translate(-50%, -50%) scale(0);
     opacity: 1;
-    transform: scale(1);
   }
-
-  100% {
+  50%{
+    transform: translate(-50%, -50%) scale(1.0);
     opacity: 0;
-    transform: scale(0);
-    visibility: hidden;
-    pointer-events: none;
   }
 }
 
@@ -761,7 +770,6 @@ h1, h2, h3, h4, h5 {
   .main-timeline .timeline-content {
     color: black;
     min-height: 50vh;
-    background-color: linear-gradient(#99D5B3, #d2f9e0);
     text-align: left;
     padding: 30px 40px 30px 40px;
     margin: 0 auto;
@@ -772,17 +780,14 @@ h1, h2, h3, h4, h5 {
   }
 
   .main-timeline .timeline:nth-child(4n+2) .timeline-content {
-    background-color: linear-gradient(#99DAF4, #d2edf9);
     text-align: left;
   }
 
   .main-timeline .timeline:nth-child(4n+3) .timeline-content {
-    background-color: linear-gradient(#F59BA1, #fdced1);
     text-align: left;
   }
 
   .main-timeline .timeline:nth-child(4n+4) .timeline-content {
-    background-color: linear-gradient(#FEF79F, #fdface);
     text-align: left;
   }
 
