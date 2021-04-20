@@ -14,8 +14,8 @@ const smtpJS = message => {
   try {
     if (navigator.onLine) {
         Email.send(
-            "hola@dteil.org",
-            "hola@dteil.org",
+            "info@detailorg.com",
+            "info@detailorg.com",
             `${message.name} - ${message.email}`,
             message.text,
             { token }
@@ -34,7 +34,7 @@ const smtpJS = message => {
     }
     
   } catch (e) {
-    alert("Error, recarga la página porfavor, si el problema persiste envía un email a hola@dteil.org");
+    alert("Error, recarga la página porfavor, si el problema persiste envía un email a info@detailorg.com");
   }
 };
 
